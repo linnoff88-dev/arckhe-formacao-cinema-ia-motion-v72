@@ -78,12 +78,12 @@
         {
           "rot": "File · kit/remotion/package.json",
           "icone": "arquivo",
-          "conteudo": "{\n  \"name\": \"abertura-remotion\",\n  \"private\": true,\n  \"description\": \"Ensaio do curso Motion por código com agente (INEMA.CLUB): uma composição Remotion mínima.\",\n  \"scripts\": {\n    \"render\": \"remotion render src/index.tsx Abertura out/abertura.mp4\"\n  },\n  \"dependencies\": {\n    \"@remotion/cli\": \"4.0.537\",\n    \"react\": \"19.3.1\",\n    \"react-dom\": \"19.3.1\",\n    \"remotion\": \"4.0.537\"\n  }\n}"
+          "conteudo": "{\n  \"name\": \"abertura-remotion\",\n  \"private\": true,\n  \"description\": \"Ensaio do curso Motion por código com agente (ARCKHÉ AI): uma composição Remotion mínima.\",\n  \"scripts\": {\n    \"render\": \"remotion render src/index.tsx Abertura out/abertura.mp4\"\n  },\n  \"dependencies\": {\n    \"@remotion/cli\": \"4.0.537\",\n    \"react\": \"19.3.1\",\n    \"react-dom\": \"19.3.1\",\n    \"remotion\": \"4.0.537\"\n  }\n}"
         },
         {
           "rot": "Terminal · install, render, and check",
           "icone": "play",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nE=${TMPDIR:-/tmp}/ensaio-motion/a5; rm -rf \"$E\"; mkdir -p \"$E/remotion\"\ncp -r \"$K\"/remotion/{package.json,package-lock.json,src} \"$E/remotion/\"; cd \"$E/remotion\"\nnpm ci --no-audit --no-fund > npm.log 2>&1; echo \"npm: $?\"\nnpx remotion render src/index.tsx Abertura out/abertura.mp4 --concurrency=2 > render.log 2>&1\necho \"render: $?\"\npython3 \"$K/conferir.py\" out/abertura.mp4 5 1920x1080; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nE=${TMPDIR:-/tmp}/ensaio-motion/a5; rm -rf \"$E\"; mkdir -p \"$E/remotion\"\ncp -r \"$K\"/remotion/{package.json,package-lock.json,src} \"$E/remotion/\"; cd \"$E/remotion\"\nnpm ci --no-audit --no-fund > npm.log 2>&1; echo \"npm: $?\"\nnpx remotion render src/index.tsx Abertura out/abertura.mp4 --concurrency=2 > render.log 2>&1\necho \"render: $?\"\npython3 \"$K/conferir.py\" out/abertura.mp4 5 1920x1080; echo \"saída: $?\""
         }
       ],
       "saida": {
@@ -182,7 +182,7 @@
           "titulo": "E3 · Six seconds and a different curve",
           "min": "15 min",
           "texto": "In /tmp/ensaio-motion/a5/remotion/src/index.tsx, change durationInFrames to 180 and the bar's easing to Easing.out(Easing.exp). Render again with the same command from the block.",
-          "pronto": "<code>python3 ~/projetos/formacao-cinema-ia-motion-v72/kit/conferir.py out/abertura.mp4 6 1920x1080; echo \"saída: $?\"</code> → <code>OK: 6,0 s · 1920×1080 · 30 fps · sem áudio</code> and <code>saída: 0</code>."
+          "pronto": "<code>python3 ~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/conferir.py out/abertura.mp4 6 1920x1080; echo \"saída: $?\"</code> → <code>OK: 6,0 s · 1920×1080 · 30 fps · sem áudio</code> and <code>saída: 0</code>."
         }
       ]
     },

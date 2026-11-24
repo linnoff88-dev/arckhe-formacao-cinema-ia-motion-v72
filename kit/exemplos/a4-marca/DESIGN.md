@@ -1,4 +1,4 @@
-# DESIGN.md — vídeo de exemplo (curso Motion por código, INEMA.CLUB)
+# DESIGN.md — vídeo de exemplo (curso Motion por código, ARCKHÉ AI)
 
 Uma frase: fundo escuro e calmo, uma ideia por vez, luz em vez de cor; o amarelo só aparece em detalhe.
 

@@ -1,10 +1,10 @@
-# PLANO — Motion por código com agente (Formação Cinema com IA, curso 3 de 6, PILOTO) · 19/10/2026
+# PLANO — Motion por código com agente (Formação CARCKHÉ com IA, curso 3 de 6, PILOTO) · 19/10/2026
 
 Público: quem já usa Claude Code ou Codex no terminal. Toda prática é `comando` → trecho literal da saída, com `echo "saída: $?"`; render local, sem crédito e sem API.
 Kit = pasta `kit/` deste repo (o aluno clona o repo em `~/projetos`). Cada bloco "Terminal" é um arquivo `kit/blocos/aNx-*.sh`, roda com `kit/capturar.sh` (TMPDIR próprio, trocado por `/tmp` na saída, timeout 600 s, MemoryMax 8G, um por vez) e a saída vai para `kit/saidas/`; `scripts/resolver-kit.py . --conferir` confere bloco × arquivo testado.
 Saídas com selo "real": capturadas em 19/10/2026 nesta máquina (Ubuntu, Node 24.13, ffmpeg 6.1.1, hyperframes 0.8.176, remotion 4.0.537, render por software — "software gpu").
 
-Fontes: `skill-video-explicativo` (pipeline HTML→MP4, Kokoro `pf_dora`), `motion-rise` (RISE e as 10 falhas), `cchyperframes` (só o conceito de sistema de marca e filosofia de movimento; nenhum exemplo nem peça de terceiros), `remotion-templates` (API `interpolate`/`spring`), `claude-remotion-motion` (mapa de bibliotecas), `inema-motion-lab` e `motion-echo-portraits` (peças INEMA, só por link), skills `hyperframes*` e `remotion*` instaladas, pesquisa §5 e §10, e o próprio CLI medido (`--help`, `lint`, `check`, `render`, `tts`, `transcribe`, `snapshot`) em 19/10/2026.
+Fontes: `skill-video-explicativo` (pipeline HTML→MP4, Kokoro `pf_dora`), `motion-rise` (RISE e as 10 falhas), `cchyperframes` (só o conceito de sistema de marca e filosofia de movimento; nenhum exemplo nem peça de terceiros), `remotion-templates` (API `interpolate`/`spring`), `claude-remotion-motion` (mapa de bibliotecas), `ARCKHÉ-motion-lab` e `motion-echo-portraits` (peças ARCKHÉ, só por link), skills `hyperframes*` e `remotion*` instaladas, pesquisa §5 e §10, e o próprio CLI medido (`--help`, `lint`, `check`, `render`, `tts`, `transcribe`, `snapshot`) em 19/10/2026.
 
 ## Aulas
 
@@ -20,8 +20,8 @@ Fontes: `skill-video-explicativo` (pipeline HTML→MP4, Kokoro `pf_dora`), `moti
 | 8 | abertura | Sua peça: abertura de 15 s em 16:9 e 9:16, renderizada e conferida | entregar uma abertura de 15 s em 16:9 e 9:16, com o DESIGN.md, conferida pelo kit nos dois formatos. | mapa (aulas 2, 3, 4, 7) + gerador | `a8a-dois-formatos` → `OK: 15,0 s · 1920×1080 …` e `OK: 15,0 s · 1080×1920 …`; erro capturado de `--resolution portrait` |
 
 Simulação: `simfila` na aula 8 (fila de check/render dos dois formatos que falha num render e retoma só o que faltou). Sem `simconversa` (não ensina nada aqui que um bloco real não ensine melhor).
-Vídeo: nenhum vídeo publicado deste tema (AUDITORIA §c). As peças do `inema-motion-lab` estão só locais, sem release nem `.vtt`: ficam fora; vão por link para o guia.
-Próximo curso da ordem: curso 4, `https://inematds.github.io/formacao-cinema-ia-fabrica-v72/` (ainda não publicado em 19/10/2026).
+Vídeo: nenhum vídeo publicado deste tema (AUDITORIA §c). As peças do `ARCKHÉ-motion-lab` estão só locais, sem release nem `.vtt`: ficam fora; vão por link para o guia.
+Próximo curso da ordem: curso 4, `https://linnoff88-dev.github.io/ (ainda não publicado em 19/10/2026).
 
 ## Novo / atualizado em relação aos cursos antigos (passo obrigatório do BRIEF)
 
@@ -29,7 +29,7 @@ Conferido contra a PESQUISA (§5, §10) e contra o CLI instalado em 19/10/2026.
 - **Aula 1 — novo.** Nenhum curso antigo ensinava o modelo mental comum (composição + tempo + render determinístico) nem provava determinismo. Agora: dois renders comparados quadro a quadro (`framemd5`) e o `lint` acusando `Math.random()` (`non_deterministic_code`), medidos.
 - **Aula 2 — atualizado.** `skill-video-explicativo` fixava `hyperframes@0.8.66/0.8.77` e usava `inspect --samples 16`; agora `hyperframes@0.8.176` (npm, 19/10/2026) e `check` (o `inspect` virou apelido antigo). Novo: `HYPERFRAMES_NO_TELEMETRY=1` (o CLI manda telemetria anônima por padrão; `telemetry status` mostra), `init --non-interactive` com `package.json` que fixa a versão, aviso de que o `snapshot` chama o Gemini sozinho se houver `GEMINI_API_KEY` no ambiente.
 - **Aula 3 — atualizado.** `motion-rise` citava o modelo por nome de versão; agora "o modelo topo da sua assinatura". O "E" saiu de `render(ctx, t)` em canvas para o vocabulário do HyperFrames (timeline pausada, `check`, `snapshot --at`), e o teste em cinco quadros virou comando com costura conferida.
-- **Aula 4 — atualizado.** `cchyperframes` tinha DESIGN.md com marcas de terceiros e uma "filosofia" tirada de um comercial alheio; agora um DESIGN.md INEMA de exemplo (tokens da linha v7.2) e um conferidor que reprova cor fora da marca. Nenhuma peça, marca ou linha do tempo de terceiros.
+- **Aula 4 — atualizado.** `cchyperframes` tinha DESIGN.md com marcas de terceiros e uma "filosofia" tirada de um comercial alheio; agora um DESIGN.md ARCKHÉ de exemplo (tokens da linha v7.2) e um conferidor que reprova cor fora da marca. Nenhuma peça, marca ou linha do tempo de terceiros.
 - **Aula 5 — atualizado.** `remotion-templates` não explicava licença nem usava agente; agora Remotion 4.0.537 (npm, 19/10/2026), licença grátis para pessoa física e empresa de até 3 pessoas (LICENSE.md), Remotion 5.0 só como "anunciado, mudança de licença, não lançado" ([incerto]); skills oficiais `remotion-dev/skills`.
 - **Aula 6 — atualizado.** `claude-remotion-motion` tinha projetos de terceiros e Framer Motion no mapa; agora o mapa segue os adaptadores do HyperFrames (GSAP padrão, Lottie, Three.js com `hf-seek` e `data-duration` obrigatório, CSS/WAAPI) e D3 como gerador de forma animada por GSAP. Three.js aprofundado é do curso 5 (link).
 - **Aula 7 — atualizado.** Antes: Kokoro pelo pipeline da skill; agora o próprio CLI faz TTS local (Kokoro-82M, voz `pf_dora`, `--lang pt-br`) e transcrição local por palavra (whisper.cpp `small`), medidos; legenda karaokê gerada do `transcript.json`. Voz, trilha e mixagem como escolha criativa ficam no curso 2 (link).

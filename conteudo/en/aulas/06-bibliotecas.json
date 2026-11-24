@@ -54,7 +54,7 @@
           "icone": "camadas",
           "titulo": "Three.js",
           "sub": "3D",
-          "detalhe": "A product spinning, a camera passing through a scene. In HyperFrames, it draws from the hf-seek event and requires data-duration on the root. Covered in depth in course 5 (cinematic sites)."
+          "detalhe": "A product spinning, a camera passing through a scene. In HyperFrames, it draws from the hf-seek event and requires data-duration on the root. Covered in depth in course 5 (cARCKHÉtic sites)."
         },
         {
           "icone": "play",
@@ -84,7 +84,7 @@
         {
           "rot": "Terminal · check, render, and run the checker",
           "icone": "play",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a6; rm -rf \"$E\"; mkdir -p \"$E\"\ncp -r \"$K/exemplos/a6-dados\" \"$E/dados\"; cd \"$E/dados\"\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"Check passed|✗\"\nnpx -y hyperframes@0.8.176 render --quality draft --workers 2 --quiet --output dados.mp4 > render.log 2>&1\necho \"render: $?\"\npython3 \"$K/conferir.py\" dados.mp4 6 1920x1080; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a6; rm -rf \"$E\"; mkdir -p \"$E\"\ncp -r \"$K/exemplos/a6-dados\" \"$E/dados\"; cd \"$E/dados\"\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"Check passed|✗\"\nnpx -y hyperframes@0.8.176 render --quality draft --workers 2 --quiet --output dados.mp4 > render.log 2>&1\necho \"render: $?\"\npython3 \"$K/conferir.py\" dados.mp4 6 1920x1080; echo \"saída: $?\""
         }
       ],
       "saida": {
@@ -114,7 +114,7 @@
         {
           "rot": "Terminal · lint without and with duration, render and check",
           "icone": "lupa",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a6; mkdir -p \"$E\"\nrm -rf \"$E/three\"; cp -r \"$K/exemplos/a6-three\" \"$E/three\"; cd \"$E/three\"\nsed -i 's/ data-duration=\"4\"//' index.html   # the common mistake: root without a duration\necho \"## sem data-duration\"; npx -y hyperframes@0.8.176 lint 2>&1 | grep -oE \"root_composition_missing_duration_source|[0-9]+ errors?.*\"\ncp \"$K/exemplos/a6-three/index.html\" index.html\necho \"## com data-duration\"; npx -y hyperframes@0.8.176 lint 2>&1 | grep -oE \"root_composition_missing_duration_source|[0-9]+ errors?.*\"\nnpx -y hyperframes@0.8.176 render --quality draft --workers 1 --quiet --output three.mp4 > render.log 2>&1\npython3 \"$K/conferir.py\" three.mp4 4 1920x1080; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a6; mkdir -p \"$E\"\nrm -rf \"$E/three\"; cp -r \"$K/exemplos/a6-three\" \"$E/three\"; cd \"$E/three\"\nsed -i 's/ data-duration=\"4\"//' index.html   # the common mistake: root without a duration\necho \"## sem data-duration\"; npx -y hyperframes@0.8.176 lint 2>&1 | grep -oE \"root_composition_missing_duration_source|[0-9]+ errors?.*\"\ncp \"$K/exemplos/a6-three/index.html\" index.html\necho \"## com data-duration\"; npx -y hyperframes@0.8.176 lint 2>&1 | grep -oE \"root_composition_missing_duration_source|[0-9]+ errors?.*\"\nnpx -y hyperframes@0.8.176 render --quality draft --workers 1 --quiet --output three.mp4 > render.log 2>&1\npython3 \"$K/conferir.py\" three.mp4 4 1920x1080; echo \"saída: $?\""
         }
       ],
       "saida": {
@@ -151,7 +151,7 @@
           "titulo": "E3 · Your data",
           "min": "15 min",
           "texto": "In the copy /tmp/ensaio-motion/a6/dados, replace the dados list with four numbers of your own (and the title), then run check and render again.",
-          "pronto": "<code>python3 ~/projetos/formacao-cinema-ia-motion-v72/kit/conferir.py dados.mp4 6 1920x1080; echo \"saída: $?\"</code> → <code>OK: 6,0 s</code> at the start of the line and <code>saída: 0</code>."
+          "pronto": "<code>python3 ~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/conferir.py dados.mp4 6 1920x1080; echo \"saída: $?\"</code> → <code>OK: 6,0 s</code> at the start of the line and <code>saída: 0</code>."
         }
       ]
     },
@@ -221,8 +221,8 @@
       "titulo": "Going further",
       "links": [
         {
-          "t": "Course 5 of the program: cinematic websites (Three.js in depth)",
-          "href": "https://inematds.github.io/formacao-cinema-ia-sites-v72/en/",
+          "t": "Course 5 of the program: cARCKHÉtic websites (Three.js in depth)",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "camadas"
         },
         {

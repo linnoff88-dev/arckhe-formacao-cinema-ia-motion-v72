@@ -65,7 +65,7 @@
         }
       ],
       "volta": "falló un fotograma → corregir y examinar de nuevo",
-      "legenda": "Método RISE del curso motion-rise de INEMA, adaptado a HyperFrames: la E usa check y snapshot en lugar de un canvas propio."
+      "legenda": "Método RISE del curso motion-rise de ARCKHÉ, adaptado a HyperFrames: la E usa check y snapshot en lugar de un canvas propio."
     },
     {
       "tipo": "codigo",
@@ -92,12 +92,12 @@
         {
           "rot": "Terminal · check, cinco fotogramas y costura",
           "icone": "lupa",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nunset GEMINI_API_KEY   # sin esto, el snapshot envía los fotogramas a Gemini por su cuenta\nE=${TMPDIR:-/tmp}/ensaio-motion/a3; rm -rf \"$E\"; mkdir -p \"$E\"\ncp -r \"$K/exemplos/a3-loop\" \"$E/loop\"; cd \"$E/loop\"\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"Check passed|✗\"\nnpx -y hyperframes@0.8.176 snapshot --at 0,1.5,3,4.5,5.9 --no-end -o quadros > snapshot.log 2>&1\nbash \"$K/costura.sh\" quadros; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nunset GEMINI_API_KEY   # sin esto, el snapshot envía los fotogramas a Gemini por su cuenta\nE=${TMPDIR:-/tmp}/ensaio-motion/a3; rm -rf \"$E\"; mkdir -p \"$E\"\ncp -r \"$K/exemplos/a3-loop\" \"$E/loop\"; cd \"$E/loop\"\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"Check passed|✗\"\nnpx -y hyperframes@0.8.176 snapshot --at 0,1.5,3,4.5,5.9 --no-end -o quadros > snapshot.log 2>&1\nbash \"$K/costura.sh\" quadros; echo \"saída: $?\""
         },
         {
           "rot": "Terminal · el error: quitar la vuelta del cabezal de reproducción",
           "icone": "x",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nunset GEMINI_API_KEY\ncd ${TMPDIR:-/tmp}/ensaio-motion/a3/loop\nsed -i '/x: 0, duration: 1.2/d' index.html   # quita la vuelta del cabezal de reproducción\nnpx -y hyperframes@0.8.176 snapshot --at 0,1.5,3,4.5,5.9 --no-end -o quadros > snapshot.log 2>&1\nbash \"$K/costura.sh\" quadros; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nunset GEMINI_API_KEY\ncd ${TMPDIR:-/tmp}/ensaio-motion/a3/loop\nsed -i '/x: 0, duration: 1.2/d' index.html   # quita la vuelta del cabezal de reproducción\nnpx -y hyperframes@0.8.176 snapshot --at 0,1.5,3,4.5,5.9 --no-end -o quadros > snapshot.log 2>&1\nbash \"$K/costura.sh\" quadros; echo \"saída: $?\""
         }
       ],
       "saida": {
@@ -183,7 +183,7 @@
           "titulo": "E3 · Tu agente hace el loop",
           "min": "20 min",
           "texto": "En un proyecto nuevo (npx hyperframes@0.8.176 init meu-loop --non-interactive), copia kit/prompts/rise-loop.md y kit/exemplos/a4-marca/DESIGN.md a la carpeta y envía el pedido a tu agente. (El DESIGN.md viene listo; la clase 4 explica cada sección). Después corre tú mismo el check y el snapshot del bloque.",
-          "pronto": "En la carpeta meu-loop: <code>npx hyperframes@0.8.176 check</code> termina en <code>Check passed</code> y <code>bash ~/projetos/formacao-cinema-ia-motion-v72/kit/costura.sh quadros; echo \"saída: $?\"</code> → <code>COSTURA: igual</code> y <code>saída: 0</code>."
+          "pronto": "En la carpeta meu-loop: <code>npx hyperframes@0.8.176 check</code> termina en <code>Check passed</code> y <code>bash ~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/costura.sh quadros; echo \"saída: $?\"</code> → <code>COSTURA: igual</code> y <code>saída: 0</code>."
         }
       ]
     },
@@ -265,8 +265,8 @@
       "titulo": "Para ir más allá",
       "links": [
         {
-          "t": "Motion en código: el método RISE (curso INEMA)",
-          "href": "https://inematds.github.io/motion-rise/",
+          "t": "Motion en código: el método RISE (curso ARCKHÉ)",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "arquivo"
         },
         {

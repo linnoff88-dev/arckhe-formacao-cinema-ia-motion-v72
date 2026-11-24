@@ -122,12 +122,12 @@
         {
           "rot": "Git · clone the course (once)",
           "icone": "git",
-          "conteudo": "git clone https://github.com/inematds/formacao-cinema-ia-motion-v72 ~/projetos/formacao-cinema-ia-motion-v72"
+          "conteudo": "git clone https://github.com/linnoff88-dev/formacao-cARCKHÉ-ia-motion-v72 ~/projetos/formacao-cARCKHÉ-ia-motion-v72"
         },
         {
           "rot": "Terminal · two renders of each and the comparison",
           "icone": "play",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a1; rm -rf \"$E\"; mkdir -p \"$E\"\nfor ex in a1-sorteio a1-semente; do\n  cp -r \"$K/exemplos/$ex\" \"$E/$ex\"; cd \"$E/$ex\"\n  for n in 1 2; do\n    npx -y hyperframes@0.8.176 render --quality draft --workers 1 --quiet --output \"render-$n.mp4\" > /dev/null 2>&1\n  done\n  echo \"## $ex\"; bash \"$K/comparar-quadros.sh\" render-1.mp4 render-2.mp4; echo \"saída: $?\"\ndone"
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a1; rm -rf \"$E\"; mkdir -p \"$E\"\nfor ex in a1-sorteio a1-semente; do\n  cp -r \"$K/exemplos/$ex\" \"$E/$ex\"; cd \"$E/$ex\"\n  for n in 1 2; do\n    npx -y hyperframes@0.8.176 render --quality draft --workers 1 --quiet --output \"render-$n.mp4\" > /dev/null 2>&1\n  done\n  echo \"## $ex\"; bash \"$K/comparar-quadros.sh\" render-1.mp4 render-2.mp4; echo \"saída: $?\"\ndone"
         }
       ],
       "saida": {
@@ -152,7 +152,7 @@
         {
           "rot": "Terminal · lint of both compositions",
           "icone": "lupa",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nfor ex in a1-sorteio a1-semente; do\n  cd \"$K/exemplos/$ex\"\n  npx -y hyperframes@0.8.176 lint; echo \"saída: $?\"\ndone"
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nfor ex in a1-sorteio a1-semente; do\n  cd \"$K/exemplos/$ex\"\n  npx -y hyperframes@0.8.176 lint; echo \"saída: $?\"\ndone"
         }
       ],
       "saida": {
@@ -160,7 +160,7 @@
         "abas": [
           {
             "rot": "Captured output (10/19/2026)",
-            "html": "<pre>◆  Linting a1-sorteio/index.html\n\n  ✗ [~/projetos/formacao-cinema-ia-motion-v72/kit/exemplos/a1-sorteio/index.html:24:24] non_deterministic_code: Script contains `Math.random()` which produces non-deterministic output. Renders may differ between frames or runs.\n    Fix: Use a seeded PRNG (e.g. a simple mulberry32) so renders are deterministic across frames.\n\n◇  1 error(s), 0 warning(s)\nsaída: 1\n◆  Linting a1-semente/index.html\n\n◇  0 errors, 0 warnings\nsaída: 0</pre><p>The lint exits with code 1 when it finds an error: you can use it as a gate before any render.</p>"
+            "html": "<pre>◆  Linting a1-sorteio/index.html\n\n  ✗ [~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/exemplos/a1-sorteio/index.html:24:24] non_deterministic_code: Script contains `Math.random()` which produces non-deterministic output. Renders may differ between frames or runs.\n    Fix: Use a seeded PRNG (e.g. a simple mulberry32) so renders are deterministic across frames.\n\n◇  1 error(s), 0 warning(s)\nsaída: 1\n◆  Linting a1-semente/index.html\n\n◇  0 errors, 0 warnings\nsaída: 0</pre><p>The lint exits with code 1 when it finds an error: you can use it as a gate before any render.</p>"
           }
         ]
       }
@@ -189,7 +189,7 @@
           "titulo": "E3 · Another seed, same guarantee",
           "min": "10 min",
           "texto": "In /tmp/ensaio-motion/a1/a1-semente, replace mulberry32(42) with mulberry32(7), render twice (render-3.mp4 and render-4.mp4, using the same command from the block), and compare: 3 with 4, then 1 with 3.",
-          "pronto": "<code>bash ~/projetos/formacao-cinema-ia-motion-v72/kit/comparar-quadros.sh render-3.mp4 render-4.mp4</code> → <code>IGUAIS: 90/90 quadros</code>; the same with <code>render-1.mp4 render-3.mp4</code> → starts with <code>DIFEREM:</code>."
+          "pronto": "<code>bash ~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/comparar-quadros.sh render-3.mp4 render-4.mp4</code> → <code>IGUAIS: 90/90 quadros</code>; the same with <code>render-1.mp4 render-3.mp4</code> → starts with <code>DIFEREM:</code>."
         }
       ]
     },
@@ -282,7 +282,7 @@
         },
         {
           "t": "Course 0 of the program: Direction (shot, camera, and light)",
-          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/en/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "video"
         }
       ]

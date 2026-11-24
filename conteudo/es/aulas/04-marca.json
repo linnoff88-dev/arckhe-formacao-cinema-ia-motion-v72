@@ -74,12 +74,12 @@
     {
       "tipo": "codigo",
       "titulo": "Un DESIGN.md de ejemplo y la composición que lo obedece",
-      "sub": "El ejemplo usa la paleta oscura de INEMA. Cámbiala por los colores de tu marca, manteniendo las cuatro secciones.",
+      "sub": "El ejemplo usa la paleta oscura de ARCKHÉ. Cámbiala por los colores de tu marca, manteniendo las cuatro secciones.",
       "blocos": [
         {
           "rot": "Archivo · kit/exemplos/a4-marca/DESIGN.md",
           "icone": "arquivo",
-          "conteudo": "# DESIGN.md — vídeo de exemplo (curso Motion por código, INEMA.CLUB)\n\nUna frase: fondo oscuro y calmo, una idea a la vez, luz en lugar de color; el amarillo solo aparece en detalles.\n\n## Cores\n- fundo: #0c0c10\n- superfície: #1c1c22\n- linha: #3f3f47\n- texto: #f4f4f5\n- texto secundário: #a1a1aa\n- destaque (solo detalle: un filete, un punto, el cabezal de lectura): #e9b949\n\n## Tipografia\n- Títulos: sans serif del sistema, peso 700, altura de línea 1,1, máximo 6 palabras.\n- Apoyo: sans serif del sistema, peso 400, 48 px en 1920x1080.\n- Ninguna palabra sola en la última línea.\n\n## Movimento\n- Entrada de 0,5 a 0,8 s con power2.out o power3.out; salida más corta que la entrada, con power2.in.\n- Una cosa se mueve a la vez; la siguiente empieza cuando la anterior ya se asentó.\n- Todo texto queda al menos 1,2 s quieto y legible.\n- Nada a velocidad constante (ease \"none\" solo en barra de progreso).\n- El fotograma principal (título o marca) se sostiene al menos 1,5 s al final.\n\n## Proibido\n- Color que no está en \"Cores\", neón, brillo fuerte, degradado de colores.\n- Logo dibujado de memoria: logo solo del archivo de la marca.\n- Math.random y Date.now en la composición."
+          "conteudo": "# DESIGN.md — vídeo de exemplo (curso Motion por código, ARCKHÉ AI)\n\nUna frase: fondo oscuro y calmo, una idea a la vez, luz en lugar de color; el amarillo solo aparece en detalles.\n\n## Cores\n- fundo: #0c0c10\n- superfície: #1c1c22\n- linha: #3f3f47\n- texto: #f4f4f5\n- texto secundário: #a1a1aa\n- destaque (solo detalle: un filete, un punto, el cabezal de lectura): #e9b949\n\n## Tipografia\n- Títulos: sans serif del sistema, peso 700, altura de línea 1,1, máximo 6 palabras.\n- Apoyo: sans serif del sistema, peso 400, 48 px en 1920x1080.\n- Ninguna palabra sola en la última línea.\n\n## Movimento\n- Entrada de 0,5 a 0,8 s con power2.out o power3.out; salida más corta que la entrada, con power2.in.\n- Una cosa se mueve a la vez; la siguiente empieza cuando la anterior ya se asentó.\n- Todo texto queda al menos 1,2 s quieto y legible.\n- Nada a velocidad constante (ease \"none\" solo en barra de progreso).\n- El fotograma principal (título o marca) se sostiene al menos 1,5 s al final.\n\n## Proibido\n- Color que no está en \"Cores\", neón, brillo fuerte, degradado de colores.\n- Logo dibujado de memoria: logo solo del archivo de la marca.\n- Math.random y Date.now en la composición."
         },
         {
           "rot": "Archivo · kit/exemplos/a4-marca/index.html",
@@ -96,12 +96,12 @@
         {
           "rot": "Terminal · verificar el DESIGN.md y el check",
           "icone": "check",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a4; rm -rf \"$E\"; mkdir -p \"$E\"\ncp -r \"$K/exemplos/a4-marca\" \"$E/marca\"; cd \"$E/marca\"\npython3 \"$K/conferir-design.py\" DESIGN.md index.html; echo \"saída: $?\"\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"Check passed|✗|WCAG\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a4; rm -rf \"$E\"; mkdir -p \"$E\"\ncp -r \"$K/exemplos/a4-marca\" \"$E/marca\"; cd \"$E/marca\"\npython3 \"$K/conferir-design.py\" DESIGN.md index.html; echo \"saída: $?\"\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"Check passed|✗|WCAG\""
         },
         {
           "rot": "Terminal · el error: el agente \"mejoró\" el destaque",
           "icone": "x",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\ncd ${TMPDIR:-/tmp}/ensaio-motion/a4/marca\nsed -i 's/--destaque: #e9b949/--destaque: #ff3366/' index.html   # o agente \"melhorou\" o destaque\npython3 \"$K/conferir-design.py\" DESIGN.md index.html; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\ncd ${TMPDIR:-/tmp}/ensaio-motion/a4/marca\nsed -i 's/--destaque: #e9b949/--destaque: #ff3366/' index.html   # o agente \"melhorou\" o destaque\npython3 \"$K/conferir-design.py\" DESIGN.md index.html; echo \"saída: $?\""
         }
       ],
       "saida": {
@@ -177,7 +177,7 @@
           "titulo": "E3 · El DESIGN.md de tu marca",
           "min": "20 min",
           "texto": "Copia el ejemplo a tu proyecto de la clase 2, cambia los colores y las reglas por los de tu marca, y cambia los colores del :root del index.html por los mismos.",
-          "pronto": "<code>python3 ~/projetos/formacao-cinema-ia-motion-v72/kit/conferir-design.py DESIGN.md index.html; echo \"saída: $?\"</code> → empieza con <code>OK: 4 seções</code> y <code>saída: 0</code>."
+          "pronto": "<code>python3 ~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/conferir-design.py DESIGN.md index.html; echo \"saída: $?\"</code> → empieza con <code>OK: 4 seções</code> y <code>saída: 0</code>."
         }
       ]
     },
@@ -248,12 +248,12 @@
       "links": [
         {
           "t": "Curso 0 de la formación: luz, color y atmósfera decididos antes del prompt",
-          "href": "https://inematds.github.io/formacao-cinema-ia-direcao-v72/es/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "video"
         },
         {
-          "t": "INEMA Motion Lab: piezas con el mismo lenguaje visual",
-          "href": "https://inematds.github.io/inema-motion-lab/guia/",
+          "t": "ARCKHÉ Motion Lab: piezas con el mismo lenguaje visual",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "camadas"
         }
       ]

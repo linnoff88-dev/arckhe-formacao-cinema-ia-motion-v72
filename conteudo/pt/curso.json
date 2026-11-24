@@ -1,30 +1,30 @@
 {
-  "id": "formacao-cinema-ia-motion-v72",
+  "id": "formacao-cARCKHÉ-ia-motion-v72",
   "lang": "pt-BR",
-  "url": "https://inematds.github.io/formacao-cinema-ia-motion-v72/",
+  "url": "https://linnoff88-dev.github.io/
   "nome": "Motion por código com agente",
-  "sub": "Formação Cinema com IA · curso 3 de 6",
+  "sub": "Formação CARCKHÉ com IA · curso 3 de 6",
   "volta": {
-    "t": "INEMA.CLUB",
-    "href": "https://inema.club/"
+    "t": "ARCKHÉ AI",
+    "href": "https://ARCKHÉ AI/"
   },
   "lado_card": {
     "rot": "Kit do curso",
     "t": "Blocos testados e conferidores",
     "texto": "Toda saída das aulas sai da pasta kit/ deste repositório. Clone em ~/projetos e rode os mesmos blocos.",
     "link": "Abrir o kit no GitHub",
-    "href": "https://github.com/inematds/formacao-cinema-ia-motion-v72/tree/main/kit"
+    "href": "https://github.com/linnoff88-dev/formacao-cARCKHÉ-ia-motion-v72/tree/main/kit"
   },
-  "rodape": "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · Formação Cinema com IA, curso 3 de 6 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a>",
+  "rodape": "ARCKHÉ AI · conteúdo aberto e gratuito · formato ARCKHÉ Learning v7.2 · Formação CARCKHÉ com IA, curso 3 de 6 · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a>",
   "videos": {},
   "inicio": {
-    "kicker": "Formação Cinema com IA · curso 3 de 6 · 8 aulas",
+    "kicker": "Formação CARCKHÉ com IA · curso 3 de 6 · 8 aulas",
     "titulo": "Motion por código com agente: o vídeo que sai do terminal, igual toda vez",
     "lead": "HyperFrames e Remotion transformam HTML e React em MP4. Você pede ao agente, confere em cinco quadros, prende a peça a um DESIGN.md, põe voz e legenda locais e entrega uma abertura de 15 s em 16:9 e 9:16. Tudo renderiza na sua máquina, sem crédito.",
     "cta": "Começar pela aula 1",
     "cta2": {
       "t": "Abrir o kit no GitHub",
-      "href": "https://github.com/inematds/formacao-cinema-ia-motion-v72/tree/main/kit"
+      "href": "https://github.com/linnoff88-dev/formacao-cARCKHÉ-ia-motion-v72/tree/main/kit"
     },
     "capa_alt": "Mesa de edição escura com um monitor de linha do tempo, um teclado e uma claquete fechada; à esquerda o título do curso.",
     "numeros": [

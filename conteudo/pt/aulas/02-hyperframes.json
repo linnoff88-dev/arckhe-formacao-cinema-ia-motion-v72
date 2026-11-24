@@ -109,7 +109,7 @@
         {
           "rot": "Terminal · check, render e conferir",
           "icone": "play",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\ncd ${TMPDIR:-/tmp}/ensaio-motion/a2/minha-abertura\ncp \"$K/exemplos/a2-ola/index.html\" index.html\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"◇|✗|⚠\"\nnpx -y hyperframes@0.8.176 render --quality draft --workers 2 --quiet --output renders/abertura.mp4 > render.log 2>&1\necho \"render: $?\"\npython3 \"$K/conferir.py\" renders/abertura.mp4 5 1920x1080; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\ncd ${TMPDIR:-/tmp}/ensaio-motion/a2/minha-abertura\ncp \"$K/exemplos/a2-ola/index.html\" index.html\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"◇|✗|⚠\"\nnpx -y hyperframes@0.8.176 render --quality draft --workers 2 --quiet --output renders/abertura.mp4 > render.log 2>&1\necho \"render: $?\"\npython3 \"$K/conferir.py\" renders/abertura.mp4 5 1920x1080; echo \"saída: $?\""
         }
       ],
       "saida": {
@@ -162,7 +162,7 @@
           "titulo": "E3 · Oito segundos",
           "min": "10 min",
           "texto": "No index.html do seu projeto, mude data-duration da raiz para 8, troque o título por um seu, rode check e render de novo.",
-          "pronto": "<code>python3 ~/projetos/formacao-cinema-ia-motion-v72/kit/conferir.py renders/abertura.mp4 8 1920x1080; echo \"saída: $?\"</code> → <code>OK: 8,0 s · 1920×1080 · 30 fps · sem áudio</code> e <code>saída: 0</code>."
+          "pronto": "<code>python3 ~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/conferir.py renders/abertura.mp4 8 1920x1080; echo \"saída: $?\"</code> → <code>OK: 8,0 s · 1920×1080 · 30 fps · sem áudio</code> e <code>saída: 0</code>."
         }
       ]
     },
@@ -254,8 +254,8 @@
           "icone": "relogio"
         },
         {
-          "t": "INEMA Motion Lab: 20 peças de motion de interface",
-          "href": "https://inematds.github.io/inema-motion-lab/guia/",
+          "t": "ARCKHÉ Motion Lab: 20 peças de motion de interface",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "video"
         }
       ]

@@ -65,7 +65,7 @@
         }
       ],
       "volta": "a frame failed → fix it and examine again",
-      "legenda": "RISE method from the INEMA motion-rise course, adapted to HyperFrames: the E uses check and snapshot instead of its own canvas."
+      "legenda": "RISE method from the ARCKHÉ motion-rise course, adapted to HyperFrames: the E uses check and snapshot instead of its own canvas."
     },
     {
       "tipo": "codigo",
@@ -92,12 +92,12 @@
         {
           "rot": "Terminal · check, five frames and seam",
           "icone": "lupa",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nunset GEMINI_API_KEY   # sem isso, o snapshot manda os quadros ao Gemini sozinho\nE=${TMPDIR:-/tmp}/ensaio-motion/a3; rm -rf \"$E\"; mkdir -p \"$E\"\ncp -r \"$K/exemplos/a3-loop\" \"$E/loop\"; cd \"$E/loop\"\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"Check passed|✗\"\nnpx -y hyperframes@0.8.176 snapshot --at 0,1.5,3,4.5,5.9 --no-end -o quadros > snapshot.log 2>&1\nbash \"$K/costura.sh\" quadros; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nunset GEMINI_API_KEY   # sem isso, o snapshot manda os quadros ao Gemini sozinho\nE=${TMPDIR:-/tmp}/ensaio-motion/a3; rm -rf \"$E\"; mkdir -p \"$E\"\ncp -r \"$K/exemplos/a3-loop\" \"$E/loop\"; cd \"$E/loop\"\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"Check passed|✗\"\nnpx -y hyperframes@0.8.176 snapshot --at 0,1.5,3,4.5,5.9 --no-end -o quadros > snapshot.log 2>&1\nbash \"$K/costura.sh\" quadros; echo \"saída: $?\""
         },
         {
           "rot": "Terminal · the error: removing the playhead's return",
           "icone": "x",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nunset GEMINI_API_KEY\ncd ${TMPDIR:-/tmp}/ensaio-motion/a3/loop\nsed -i '/x: 0, duration: 1.2/d' index.html   # tira a volta da cabeça de leitura\nnpx -y hyperframes@0.8.176 snapshot --at 0,1.5,3,4.5,5.9 --no-end -o quadros > snapshot.log 2>&1\nbash \"$K/costura.sh\" quadros; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nunset GEMINI_API_KEY\ncd ${TMPDIR:-/tmp}/ensaio-motion/a3/loop\nsed -i '/x: 0, duration: 1.2/d' index.html   # tira a volta da cabeça de leitura\nnpx -y hyperframes@0.8.176 snapshot --at 0,1.5,3,4.5,5.9 --no-end -o quadros > snapshot.log 2>&1\nbash \"$K/costura.sh\" quadros; echo \"saída: $?\""
         }
       ],
       "saida": {
@@ -183,7 +183,7 @@
           "titulo": "E3 · Your agent makes the loop",
           "min": "20 min",
           "texto": "In a new project (npx hyperframes@0.8.176 init meu-loop --non-interactive), copy kit/prompts/rise-loop.md and kit/exemplos/a4-marca/DESIGN.md into the folder and send the request to your agent. (The DESIGN.md comes ready; lesson 4 explains each section.) Then run the check and the snapshot from the block yourself.",
-          "pronto": "In the meu-loop folder: <code>npx hyperframes@0.8.176 check</code> ends with <code>Check passed</code> and <code>bash ~/projetos/formacao-cinema-ia-motion-v72/kit/costura.sh quadros; echo \"saída: $?\"</code> → <code>COSTURA: igual</code> and <code>saída: 0</code>."
+          "pronto": "In the meu-loop folder: <code>npx hyperframes@0.8.176 check</code> ends with <code>Check passed</code> and <code>bash ~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/costura.sh quadros; echo \"saída: $?\"</code> → <code>COSTURA: igual</code> and <code>saída: 0</code>."
         }
       ]
     },
@@ -265,8 +265,8 @@
       "titulo": "Going further",
       "links": [
         {
-          "t": "Motion in code: the RISE method (INEMA course)",
-          "href": "https://inematds.github.io/motion-rise/",
+          "t": "Motion in code: the RISE method (ARCKHÉ course)",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "arquivo"
         },
         {

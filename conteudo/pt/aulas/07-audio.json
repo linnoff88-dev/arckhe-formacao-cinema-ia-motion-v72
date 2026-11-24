@@ -79,7 +79,7 @@
         {
           "rot": "Terminal · tts, duração e transcrição",
           "icone": "megafone",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a7; rm -rf \"$E\"; mkdir -p \"$E\"\ncp -r \"$K/exemplos/a7-karaoke\" \"$E/karaoke\"; cd \"$E/karaoke\"\nTEXTO=\"A voz sai do seu computador, e cada palavra sabe a hora de aparecer.\"\nnpx -y hyperframes@0.8.176 tts \"$TEXTO\" --voice pf_dora --lang pt-br -o narracao.wav > tts.log 2>&1; echo \"tts: $?\"\nffprobe -v error -show_entries format=duration -of csv=p=0 narracao.wav\nnpx -y hyperframes@0.8.176 transcribe narracao.wav -m small -l pt --json > transcricao.log 2>/dev/null; echo \"transcribe: $?\"\npython3 -c \"import json; print('palavras:', len(json.load(open('transcript.json'))))\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a7; rm -rf \"$E\"; mkdir -p \"$E\"\ncp -r \"$K/exemplos/a7-karaoke\" \"$E/karaoke\"; cd \"$E/karaoke\"\nTEXTO=\"A voz sai do seu computador, e cada palavra sabe a hora de aparecer.\"\nnpx -y hyperframes@0.8.176 tts \"$TEXTO\" --voice pf_dora --lang pt-br -o narracao.wav > tts.log 2>&1; echo \"tts: $?\"\nffprobe -v error -show_entries format=duration -of csv=p=0 narracao.wav\nnpx -y hyperframes@0.8.176 transcribe narracao.wav -m small -l pt --json > transcricao.log 2>/dev/null; echo \"transcribe: $?\"\npython3 -c \"import json; print('palavras:', len(json.load(open('transcript.json'))))\""
         }
       ],
       "saida": {
@@ -114,7 +114,7 @@
         {
           "rot": "Terminal · trilha, legendas, render e conferir",
           "icone": "play",
-          "conteudo": "K=~/projetos/formacao-cinema-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\ncd ${TMPDIR:-/tmp}/ensaio-motion/a7/karaoke\n# trilha de ensaio: um acorde suave de 8 s gerado no ffmpeg (a sua trilha de verdade entra no lugar)\nffmpeg -v error -y -f lavfi -i \"aevalsrc=0.10*sin(2*PI*220*t)+0.07*sin(2*PI*277.18*t)+0.06*sin(2*PI*329.63*t):s=48000:d=8\" \\\n  -af \"afade=t=in:d=1,afade=t=out:st=6.5:d=1.5\" trilha.wav\npython3 \"$K/karaoke.py\" transcript.json --inicio 0.5 --por-linha 3 > legendas.js\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"Check passed|✗\"\nnpx -y hyperframes@0.8.176 render --quality draft --workers 2 --quiet --output karaoke.mp4 > render.log 2>&1\necho \"render: $?\"\npython3 \"$K/conferir.py\" karaoke.mp4 8 1920x1080 --audio; echo \"saída: $?\""
+          "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1\ncd ${TMPDIR:-/tmp}/ensaio-motion/a7/karaoke\n# trilha de ensaio: um acorde suave de 8 s gerado no ffmpeg (a sua trilha de verdade entra no lugar)\nffmpeg -v error -y -f lavfi -i \"aevalsrc=0.10*sin(2*PI*220*t)+0.07*sin(2*PI*277.18*t)+0.06*sin(2*PI*329.63*t):s=48000:d=8\" \\\n  -af \"afade=t=in:d=1,afade=t=out:st=6.5:d=1.5\" trilha.wav\npython3 \"$K/karaoke.py\" transcript.json --inicio 0.5 --por-linha 3 > legendas.js\nnpx -y hyperframes@0.8.176 check 2>&1 | grep -E \"Check passed|✗\"\nnpx -y hyperframes@0.8.176 render --quality draft --workers 2 --quiet --output karaoke.mp4 > render.log 2>&1\necho \"render: $?\"\npython3 \"$K/conferir.py\" karaoke.mp4 8 1920x1080 --audio; echo \"saída: $?\""
         }
       ],
       "saida": {
@@ -155,7 +155,7 @@
           "titulo": "E3 · A sua frase",
           "min": "15 min",
           "texto": "Troque TEXTO por uma frase sua de até 5 s, rode os dois blocos de novo (o segundo depois do primeiro) e confira o vídeo.",
-          "pronto": "<code>python3 ~/projetos/formacao-cinema-ia-motion-v72/kit/conferir.py karaoke.mp4 8 1920x1080 --audio; echo \"saída: $?\"</code> → linha terminando em <code>com áudio</code> e <code>saída: 0</code>."
+          "pronto": "<code>python3 ~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/conferir.py karaoke.mp4 8 1920x1080 --audio; echo \"saída: $?\"</code> → linha terminando em <code>com áudio</code> e <code>saída: 0</code>."
         }
       ]
     },
@@ -238,7 +238,7 @@
       "links": [
         {
           "t": "Curso 2 da formação: som como personagem, voz e trilha",
-          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/",
+          "href": "https://linnoff88-dev.github.io/
           "icone": "megafone"
         },
         {
