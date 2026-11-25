@@ -109,7 +109,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>OK: 4 seções · 6 cores · 5 regras de movimento · a composição usa só cores do DESIGN.md\nsaída: 0\n  ◇ 7/7 text checks pass WCAG AA\n◇  Check passed</pre><p>El check de HyperFrames verifica el contraste (WCAG AA); el verificador del kit verifica la marca. Son compuertas distintas.</p>"
+            "html": "<pre>OK: 4 seções · 6 cores · 5 regras de movimento · a composiçêo usa só cores do DESIGN.md\nsaída: 0\n  ◇ 7/7 text checks pass WCAG AA\n◇  Check passed</pre><p>El check de HyperFrames verifica el contraste (WCAG AA); el verificador del kit verifica la marca. Son compuertas distintas.</p>"
           },
           {
             "rot": "Error capturado: color fuera de la marca",
@@ -163,7 +163,7 @@
           "titulo": "E1 · Marca verificada",
           "min": "5 min",
           "texto": "Ejecuta el bloque \"verificar el DESIGN.md y el check\".",
-          "pronto": "<code>OK: 4 seções · 6 cores · 5 regras de movimento · a composição usa só cores do DESIGN.md</code>, <code>saída: 0</code> y <code>◇  Check passed</code>."
+          "pronto": "<code>OK: 4 seções · 6 cores · 5 regras de movimento · a composiçêo usa só cores do DESIGN.md</code>, <code>saída: 0</code> y <code>◇  Check passed</code>."
         },
         {
           "id": "e2",

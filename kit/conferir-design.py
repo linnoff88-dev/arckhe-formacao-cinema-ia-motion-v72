@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""conferir-design.py — confere o DESIGN.md do vídeo e se a composição respeita as cores dele.
+"""conferir-design.py — confere o DESIGN.md do vídeo e se a composiçêo respeita as cores dele.
 
 Uso:  python3 conferir-design.py DESIGN.md index.html
 
@@ -16,7 +16,7 @@ SECOES = ["Cores", "Tipografia", "Movimento", "Proibido"]
 
 
 def eh_cor(linha, m):
-    """Cor = valor de propriedade ou atributo: vem depois de : , ( = ou aspas e não abre um bloco {."""
+    """Cor = valor de propriedade ou atributo: vem depois de : , ( = ou aspas e nêo abre um bloco {."""
     antes = linha[:m.start()].rstrip()
     depois = linha[m.end():].lstrip()
     return bool(antes) and antes[-1] in ":,(=\"'" and not depois.startswith("{")
@@ -43,27 +43,27 @@ def main():
     s = secoes(md)
     faltam = [n for n in SECOES if n not in s]
     if faltam:
-        print("FALTA: seção " + ", ".join(f"## {n}" for n in faltam))
+        print("FALTA: seçêo " + ", ".join(f"## {n}" for n in faltam))
         return 1
     cores = {c.lower() for c in HEX.findall("\n".join(s["Cores"]))}
     regras = [l for l in s["Movimento"] if l.strip().startswith("- ")]
     if len(cores) < 2:
-        print("FALTA: pelo menos 2 cores em hex na seção ## Cores")
+        print("FALTA: pelo menos 2 cores em hex na seçêo ## Cores")
         return 1
     if len(regras) < 3:
-        print("FALTA: pelo menos 3 regras (linhas com '- ') na seção ## Movimento")
+        print("FALTA: pelo menos 3 regras (linhas com '- ') na seçêo ## Movimento")
         return 1
     fora = []
     for n, linha in enumerate(comp, 1):
         for m in HEX.finditer(linha):
             if not eh_cor(linha, m):
-                continue  # é seletor CSS (#cabeca {), não cor
+                continue  # é seletor CSS (#cabeca {), nêo cor
             if m.group(0).lower() not in cores:
                 fora.append(f"{m.group(0)} (linha {n})")
     if fora:
         print("FORA DA MARCA: " + ", ".join(fora))
         return 1
-    print(f"OK: 4 seções · {len(cores)} cores · {len(regras)} regras de movimento · a composição usa só cores do DESIGN.md")
+    print(f"OK: 4 seções · {len(cores)} cores · {len(regras)} regras de movimento · a composiçêo usa só cores do DESIGN.md")
     return 0
 
 

@@ -23,6 +23,6 @@ Uma frase: fundo escuro e calmo, uma ideia por vez, luz em vez de cor; o amarelo
 - O quadro principal (título ou marca) segura pelo menos 1,5 s no fim.
 
 ## Proibido
-- Cor que não está em "Cores", neon, brilho forte, gradiente colorido.
+- Cor que nêo está em "Cores", neon, brilho forte, gradiente colorido.
 - Logo desenhado de memória: logo só do arquivo da marca.
-- Math.random e Date.now na composição.
+- Math.random e Date.now na composiçêo.

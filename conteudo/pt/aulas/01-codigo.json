@@ -2,11 +2,11 @@
   "slug": "codigo",
   "num": 1,
   "menu": "Código",
-  "titulo": "Vídeo é código: composição com tempo e render determinístico",
+  "titulo": "Vídeo é código: composiçêo com tempo e render determinístico",
   "titulo_curto": "Vídeo é código",
   "minutos": 15,
   "lead": "No motion por código, o vídeo é uma página que sabe desenhar qualquer instante. Um navegador sem tela pede o quadro 0, o 1, o 2, e o FFmpeg junta tudo num MP4. Se a mesma entrada der sempre os mesmos quadros, você pode refazer, corrigir e versionar o vídeo como código. Nesta aula você prova isso na sua máquina.",
-  "objetivo": "provar na sua máquina que a mesma composição dá os mesmos quadros e achar o que quebra isso.",
+  "objetivo": "provar na sua máquina que a mesma composiçêo dá os mesmos quadros e achar o que quebra isso.",
   "competencias": [
     "modelo-mental-composicao-tempo-render",
     "provar-determinismo",
@@ -15,7 +15,7 @@
   "aprende": [
     {
       "icone": "camadas",
-      "t": "As quatro peças: composição, relógio, navegador sem tela e codificador"
+      "t": "As quatro peças: composiçêo, relógio, navegador sem tela e codificador"
     },
     {
       "icone": "lupa",
@@ -27,7 +27,7 @@
     },
     {
       "icone": "check",
-      "t": "Sorteio com semente: variedade sem perder a repetição"
+      "t": "Sorteio com semente: variedade sem perder a repetiçêo"
     }
   ],
   "hero_alt": "Tira de película sobre uma mesa de luz fria, com um círculo branco que cresce de quadro em quadro.",
@@ -39,7 +39,7 @@
       "nos": [
         {
           "icone": "arquivo",
-          "titulo": "Composição",
+          "titulo": "Composiçêo",
           "sub": "HTML ou React",
           "detalhe": "Um arquivo que descreve o que existe na tela e como muda com o tempo. No HyperFrames é um index.html com atributos data-*; no Remotion, um componente React. É texto: cabe no git e o agente edita.",
           "itens": [
@@ -59,13 +59,13 @@
           "icone": "relogio",
           "titulo": "Relógio",
           "sub": "t ou quadro",
-          "detalhe": "O motor não deixa a animação correr sozinha: ele pede um instante exato (2,5 s, ou o quadro 75 a 30 fps) e a composição desenha aquele instante. Por isso dá para pular para qualquer ponto."
+          "detalhe": "O motor nêo deixa a animaçêo correr sozinha: ele pede um instante exato (2,5 s, ou o quadro 75 a 30 fps) e a composiçêo desenha aquele instante. Por isso dá para pular para qualquer ponto."
         },
         {
           "icone": "chip",
           "titulo": "Navegador",
           "sub": "sem tela",
-          "detalhe": "Um Chrome sem janela abre a composição, vai ao instante pedido e tira a foto do quadro. No primeiro uso o HyperFrames baixa esse navegador (uns 240 MB em 19/10/2026)."
+          "detalhe": "Um Chrome sem janela abre a composiçêo, vai ao instante pedido e tira a foto do quadro. No primeiro uso o HyperFrames baixa esse navegador (uns 240 MB em 19/10/2026)."
         },
         {
           "icone": "video",
@@ -81,7 +81,7 @@
     },
     {
       "tipo": "passos",
-      "titulo": "O que quebra a repetição",
+      "titulo": "O que quebra a repetiçêo",
       "sub": "Três fontes de acaso que o lint do HyperFrames procura.",
       "passos": [
         {
@@ -125,7 +125,7 @@
           "conteudo": "git clone https://github.com/linnoff88-dev/formacao-cARCKHÉ-ia-motion-v72 ~/projetos/formacao-cARCKHÉ-ia-motion-v72"
         },
         {
-          "rot": "Terminal · dois renders de cada e a comparação",
+          "rot": "Terminal · dois renders de cada e a comparaçêo",
           "icone": "play",
           "conteudo": "K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit\nexport HYPERFRAMES_NO_TELEMETRY=1\nE=${TMPDIR:-/tmp}/ensaio-motion/a1; rm -rf \"$E\"; mkdir -p \"$E\"\nfor ex in a1-sorteio a1-semente; do\n  cp -r \"$K/exemplos/$ex\" \"$E/$ex\"; cd \"$E/$ex\"\n  for n in 1 2; do\n    npx -y hyperframes@0.8.176 render --quality draft --workers 1 --quiet --output \"render-$n.mp4\" > /dev/null 2>&1\n  done\n  echo \"## $ex\"; bash \"$K/comparar-quadros.sh\" render-1.mp4 render-2.mp4; echo \"saída: $?\"\ndone"
         }
@@ -135,7 +135,7 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>## a1-sorteio\nDIFEREM: 89 de 90 quadros\nsaída: 1\n## a1-semente\nIGUAIS: 90/90 quadros\nsaída: 0</pre><p>São 90 quadros (3 s a 30 fps). Com Math.random só o primeiro coincide; com a semente, os 90. O primeiro render baixa o hyperframes@0.8.176 e o navegador, por isso demora mais.</p>"
+            "html": "<pre>## a1-sorteio\nDIFEREM: 89 de 90 quadros\nsaída: 1\n## a1-semente\nIGUAIS: 90/90 quadros\nsaída: 0</pre><p>Sêo 90 quadros (3 s a 30 fps). Com Math.random só o primeiro coincide; com a semente, os 90. O primeiro render baixa o hyperframes@0.8.176 e o navegador, por isso demora mais.</p>"
           },
           {
             "rot": "Erro comum: comparar o arquivo inteiro",
@@ -160,7 +160,7 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>◆  Linting a1-sorteio/index.html\n\n  ✗ [~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/exemplos/a1-sorteio/index.html:24:24] non_deterministic_code: Script contains `Math.random()` which produces non-deterministic output. Renders may differ between frames or runs.\n    Fix: Use a seeded PRNG (e.g. a simple mulberry32) so renders are deterministic across frames.\n\n◇  1 error(s), 0 warning(s)\nsaída: 1\n◆  Linting a1-semente/index.html\n\n◇  0 errors, 0 warnings\nsaída: 0</pre><p>O lint sai com código 1 quando acha erro: dá para usar como portão antes de qualquer render.</p>"
+            "html": "<pre>◆  Linting a1-sorteio/index.html\n\n  ✗ [~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit/exemplos/a1-sorteio/index.html:24:24] non_deterministic_code: Script contains `Math.random()` which produces non-deterministic output. Renders may differ between frames or runs.\n    Fix: Use a seeded PRNG (e.g. a simple mulberry32) so renders are deterministic across frames.\n\n◇  1 error(s), 0 warning(s)\nsaída: 1\n◆  Linting a1-semente/index.html\n\n◇  0 errors, 0 warnings\nsaída: 0</pre><p>O lint sai com código 1 quando acha erro: dá para usar como portêo antes de qualquer render.</p>"
           }
         ]
       }
@@ -174,12 +174,12 @@
           "id": "e1",
           "titulo": "E1 · Ver o acaso e a semente",
           "min": "10 min",
-          "texto": "Clone o curso em ~/projetos e rode o bloco \"dois renders de cada e a comparação\".",
-          "pronto": "a1-sorteio termina em <code>DIFEREM: 89 de 90 quadros</code> e <code>saída: 1</code>; a1-semente em <code>IGUAIS: 90/90 quadros</code> e <code>saída: 0</code>. (No seu computador o número de quadros diferentes pode variar; o que não pode é a semente dar diferente.)"
+          "texto": "Clone o curso em ~/projetos e rode o bloco \"dois renders de cada e a comparaçêo\".",
+          "pronto": "a1-sorteio termina em <code>DIFEREM: 89 de 90 quadros</code> e <code>saída: 1</code>; a1-semente em <code>IGUAIS: 90/90 quadros</code> e <code>saída: 0</code>. (No seu computador o número de quadros diferentes pode variar; o que nêo pode é a semente dar diferente.)"
         },
         {
           "id": "e2",
-          "titulo": "E2 · O lint como portão",
+          "titulo": "E2 · O lint como portêo",
           "min": "5 min",
           "texto": "Rode o bloco do lint.",
           "pronto": "a1-sorteio mostra <code>non_deterministic_code</code> e <code>saída: 1</code>; a1-semente mostra <code>0 errors, 0 warnings</code> e <code>saída: 0</code>."
@@ -196,10 +196,10 @@
     {
       "tipo": "quiz",
       "titulo": "Teste da aula",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
-          "p": "Quem decide qual instante a composição desenha?",
+          "p": "Quem decide qual instante a composiçêo desenha?",
           "opcoes": [
             "O motor de render, que pede um tempo exato a cada quadro.",
             "O navegador, desenhando na velocidade que a máquina conseguir.",
@@ -207,19 +207,19 @@
             "A placa de vídeo, conforme a carga do computador."
           ],
           "certa": 0,
-          "explica": "O motor pede o instante (2,5 s, quadro 75) e a composição desenha aquele instante. Por isso a velocidade não muda o resultado: no mesmo ambiente, uma máquina lenta demora mais, mas dá os mesmos quadros.",
+          "explica": "O motor pede o instante (2,5 s, quadro 75) e a composiçêo desenha aquele instante. Por isso a velocidade nêo muda o resultado: no mesmo ambiente, uma máquina lenta demora mais, mas dá os mesmos quadros.",
           "ref": "diagrama"
         },
         {
-          "p": "Dois renders da mesma composição deram 89 de 90 quadros diferentes. O que procurar primeiro?",
+          "p": "Dois renders da mesma composiçêo deram 89 de 90 quadros diferentes. O que procurar primeiro?",
           "opcoes": [
             "Um codificador diferente entre os dois renders.",
-            "Math.random, Date.now ou busca na rede dentro da composição.",
+            "Math.random, Date.now ou busca na rede dentro da composiçêo.",
             "Falta de memória no segundo render.",
-            "Uma fonte que não carregou a tempo."
+            "Uma fonte que nêo carregou a tempo."
           ],
           "certa": 1,
-          "explica": "Acaso dentro da composição é a causa mais comum, e o lint aponta Math.random pela linha. Os dois renders usaram o mesmo hyperframes@0.8.176 e o mesmo FFmpeg: o que mudou foi a entrada.",
+          "explica": "Acaso dentro da composiçêo é a causa mais comum, e o lint aponta Math.random pela linha. Os dois renders usaram o mesmo hyperframes@0.8.176 e o mesmo FFmpeg: o que mudou foi a entrada.",
           "ref": "passos"
         },
         {
@@ -228,22 +228,22 @@
             "Para o render ficar mais rápido em máquina lenta.",
             "Para o lint parar de reclamar sem mudar nada no resultado.",
             "Para a variedade se repetir igual em todo render.",
-            "Para cada render sair com uma versão nova e diferente."
+            "Para cada render sair com uma versêo nova e diferente."
           ],
           "certa": 2,
           "explica": "A semente fixa a sequência de números: os pontos continuam espalhados, mas sempre nos mesmos lugares. Trocar a semente troca o desenho de propósito, e de novo de forma repetível.",
           "ref": "codigo"
         },
         {
-          "p": "Por que comparar quadro a quadro e não o MP4 inteiro?",
+          "p": "Por que comparar quadro a quadro e nêo o MP4 inteiro?",
           "opcoes": [
-            "Porque o md5sum não consegue ler arquivos MP4 grandes.",
+            "Porque o md5sum nêo consegue ler arquivos MP4 grandes.",
             "Porque comparar quadros é bem mais rápido que ler o arquivo.",
-            "Porque o FFmpeg só sabe gerar hash de quadro, não de arquivo.",
+            "Porque o FFmpeg só sabe gerar hash de quadro, nêo de arquivo.",
             "Porque metadados mudam o arquivo com imagens iguais."
           ],
           "certa": 3,
-          "explica": "O que interessa é a imagem. O framemd5 decodifica cada quadro e compara os pixels; o hash do arquivo inteiro também muda com metadados que não aparecem na tela.",
+          "explica": "O que interessa é a imagem. O framemd5 decodifica cada quadro e compara os pixels; o hash do arquivo inteiro também muda com metadados que nêo aparecem na tela.",
           "ref": "codigo"
         }
       ]
@@ -253,7 +253,7 @@
       "titulo": "Em três frases",
       "itens": [
         {
-          "t": "Composição + relógio",
+          "t": "Composiçêo + relógio",
           "texto": "O vídeo é uma página que desenha qualquer instante que o motor pedir."
         },
         {
@@ -276,12 +276,12 @@
           "icone": "git"
         },
         {
-          "t": "Remotion: documentação oficial",
+          "t": "Remotion: documentaçêo oficial",
           "href": "https://www.remotion.dev/docs/",
           "icone": "arquivo"
         },
         {
-          "t": "Curso 0 da formação: Direção (plano, câmera e luz)",
+          "t": "Curso 0 da formaçêo: Direçêo (plano, câmera e luz)",
           "href": "https://linnoff88-dev.github.io/
           "icone": "video"
         }

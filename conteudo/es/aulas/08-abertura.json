@@ -99,7 +99,7 @@
         {
           "rot": "Archivo · kit/exemplos/a8-abertura/index.html",
           "icone": "arquivo",
-          "conteudo": "<!doctype html>\n<html lang=\"pt-BR\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=1920, height=1080\" />\n    <script src=\"https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js\"></script>\n    <link rel=\"stylesheet\" href=\"abertura.css\" />\n    <style>html, body { width: 1920px; height: 1080px; }</style>\n  </head>\n  <body>\n    <div id=\"root\" data-composition-id=\"main\" data-start=\"0\" data-duration=\"15\" data-width=\"1920\" data-height=\"1080\">\n      <div id=\"luz\"></div>\n      <div id=\"bloco\">\n        <p id=\"rotulo\">Formação CARCKHÉ com IA</p>\n        <h1 id=\"titulo\">Motion por&nbsp;código</h1>\n        <p id=\"apoio\">HyperFrames e Remotion, do terminal ao&nbsp;MP4</p>\n      </div>\n      <div id=\"trilho\"></div>\n      <div id=\"cabeca\"></div>\n    </div>\n    <script src=\"abertura.js\"></script>\n    <script>window.__timelines[\"main\"] = window.criaAbertura();</script>\n  </body>\n</html>"
+          "conteudo": "<!doctype html>\n<html lang=\"pt-BR\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=1920, height=1080\" />\n    <script src=\"https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js\"></script>\n    <link rel=\"stylesheet\" href=\"abertura.css\" />\n    <style>html, body { width: 1920px; height: 1080px; }</style>\n  </head>\n  <body>\n    <div id=\"root\" data-composition-id=\"main\" data-start=\"0\" data-duration=\"15\" data-width=\"1920\" data-height=\"1080\">\n      <div id=\"luz\"></div>\n      <div id=\"bloco\">\n        <p id=\"rotulo\">Formaçêo CARCKHÉ com IA</p>\n        <h1 id=\"titulo\">Motion por&nbsp;código</h1>\n        <p id=\"apoio\">HyperFrames e Remotion, do terminal ao&nbsp;MP4</p>\n      </div>\n      <div id=\"trilho\"></div>\n      <div id=\"cabeca\"></div>\n    </div>\n    <script src=\"abertura.js\"></script>\n    <script>window.__timelines[\"main\"] = window.criaAbertura();</script>\n  </body>\n</html>"
         },
         {
           "rot": "Terminal · marca, check, dos renders y verificar",
@@ -112,7 +112,7 @@
         "abas": [
           {
             "rot": "Salida capturada (19/10/2026)",
-            "html": "<pre>OK: 4 seções · 6 cores · 5 regras de movimento · a composição usa só cores do DESIGN.md\nsaída: 0\n◇  Check passed\nOK: 15,0 s · 1920×1080 · 30 fps · sem áudio\nsaída: 0\nOK: 15,0 s · 1080×1920 · 30 fps · sem áudio\nsaída: 0</pre><p>El render del 9:16 usa -c formatos/vertical.html. El vertical.html es el index.html con la raíz en 1080×1920, la clase vertical y las rutas ../abertura.css y ../abertura.js.</p>"
+            "html": "<pre>OK: 4 seções · 6 cores · 5 regras de movimento · a composiçêo usa só cores do DESIGN.md\nsaída: 0\n◇  Check passed\nOK: 15,0 s · 1920×1080 · 30 fps · sem áudio\nsaída: 0\nOK: 15,0 s · 1080×1920 · 30 fps · sem áudio\nsaída: 0</pre><p>El render del 9:16 usa -c formatos/vertical.html. El vertical.html es el index.html con la raíz en 1080×1920, la clase vertical y las rutas ../abertura.css y ../abertura.js.</p>"
           },
           {
             "rot": "Error capturado: --resolution portrait",

@@ -23,7 +23,7 @@
     </div>
     <script>
       // I: trilho e cabeça de leitura parados → a cabeça corre, o título entra e sai → a cabeça volta ao início.
-      // De 5,4 s a 6 s o quadro é igual ao quadro 0: o loop não tem costura.
+      // De 5,4 s a 6 s o quadro é igual ao quadro 0: o loop nêo tem costura.
       const tl = gsap.timeline({ paused: true });
       tl.fromTo("#cabeca", { x: 0 }, { x: 1400, duration: 2.8, ease: "power1.inOut" }, 0.6);
       tl.fromTo("#titulo", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power3.out" }, 1.0);

@@ -12,4 +12,4 @@ px() { ffmpeg -v error -i "$1" -f framemd5 - | grep -v '^#' | awk -F, '{print $N
 if [ "$(px "${Q[0]}")" = "$(px "${Q[4]}")" ]; then
   echo "COSTURA: igual (quadro inicial = quadro final)"; exit 0
 fi
-echo "COSTURA: diferente — o último quadro não volta ao primeiro"; exit 1
+echo "COSTURA: diferente — o último quadro nêo volta ao primeiro"; exit 1

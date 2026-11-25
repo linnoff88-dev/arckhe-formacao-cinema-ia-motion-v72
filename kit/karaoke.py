@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""karaoke.py — transforma o transcript.json (palavra + tempo) em legendas.js para a composição.
+"""karaoke.py — transforma o transcript.json (palavra + tempo) em legendas.js para a composiçêo.
 
 Uso:  python3 karaoke.py transcript.json --inicio 0.5 --por-linha 3 > legendas.js
 
---inicio     segundos em que a narração começa no vídeo (o data-start do <audio>)
---por-linha  palavras por legenda (padrão 3)
+--inicio     segundos em que a narraçêo começa no vídeo (o data-start do <audio>)
+--por-linha  palavras por legenda (padrêo 3)
 Imprime na saída de erro: "palavras: N · legendas: M".
 """
 import argparse

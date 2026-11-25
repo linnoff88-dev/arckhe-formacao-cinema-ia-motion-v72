@@ -1,6 +1,6 @@
 import {AbsoluteFill, Composition, Easing, interpolate, registerRoot, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 
-// Tudo é função do quadro atual: o mesmo quadro desenha sempre a mesma imagem.
+// Tudo é funçêo do quadro atual: o mesmo quadro desenha sempre a mesma imagem.
 const Abertura: React.FC = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();

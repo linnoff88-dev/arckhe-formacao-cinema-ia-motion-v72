@@ -10,7 +10,7 @@ html, body { overflow: hidden; background: var(--fundo); }
 #apoio { color: var(--texto2); font-size: 54px; line-height: 1.2; margin-top: 40px; }
 #trilho { position: absolute; left: 10%; right: 10%; bottom: 14%; height: 4px; background: var(--linha); transform-origin: left center; }
 #cabeca { position: absolute; left: 10%; bottom: calc(14% - 38px); width: 18px; height: 80px; background: var(--destaque); border-radius: 4px; }
-/* 9:16: mesma peça, letra maior em relação à largura, tudo empilhado */
+/* 9:16: mesma peça, letra maior em relaçêo à largura, tudo empilhado */
 .vertical #titulo { font-size: 132px; }
 .vertical #apoio { font-size: 56px; }
 .vertical #rotulo { font-size: 36px; }

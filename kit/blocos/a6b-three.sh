@@ -2,7 +2,7 @@ K=~/projetos/formacao-cinema-ia-motion-v72/kit
 export HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1
 E=${TMPDIR:-/tmp}/ensaio-motion/a6; mkdir -p "$E"
 rm -rf "$E/three"; cp -r "$K/exemplos/a6-three" "$E/three"; cd "$E/three"
-sed -i 's/ data-duration="4"//' index.html   # o erro comum: raiz sem duração
+sed -i 's/ data-duration="4"//' index.html   # o erro comum: raiz sem duraçêo
 echo "## sem data-duration"; npx -y hyperframes@0.8.176 lint 2>&1 | grep -oE "root_composition_missing_duration_source|[0-9]+ errors?.*"
 cp "$K/exemplos/a6-three/index.html" index.html
 echo "## com data-duration"; npx -y hyperframes@0.8.176 lint 2>&1 | grep -oE "root_composition_missing_duration_source|[0-9]+ errors?.*"

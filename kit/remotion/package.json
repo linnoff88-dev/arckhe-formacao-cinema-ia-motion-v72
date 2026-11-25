@@ -1,7 +1,7 @@
 {
   "name": "abertura-remotion",
   "private": true,
-  "description": "Ensaio do curso Motion por código com agente (ARCKHÉ AI): uma composição Remotion mínima.",
+  "description": "Ensaio do curso Motion por código com agente (ARCKHÉ AI): uma composiçêo Remotion mínima.",
   "scripts": {
     "render": "remotion render src/index.tsx Abertura out/abertura.mp4"
   },

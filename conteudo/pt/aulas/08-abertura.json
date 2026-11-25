@@ -5,7 +5,7 @@
   "titulo": "Sua peça: abertura de 15 s em 16:9 e 9:16, renderizada e conferida",
   "titulo_curto": "Sua abertura",
   "minutos": 20,
-  "lead": "Hora de juntar tudo numa peça que você usa: uma abertura de 15 s com o seu DESIGN.md, nos dois formatos que as redes pedem. O 9:16 não sai do 16:9 por uma opção de render: é outra composição que reaproveita o CSS e a coreografia. Nesta aula você entrega as duas, conferidas pelo kit, e monta o plano com datas.",
+  "lead": "Hora de juntar tudo numa peça que você usa: uma abertura de 15 s com o seu DESIGN.md, nos dois formatos que as redes pedem. O 9:16 nêo sai do 16:9 por uma opçêo de render: é outra composiçêo que reaproveita o CSS e a coreografia. Nesta aula você entrega as duas, conferidas pelo kit, e monta o plano com datas.",
   "objetivo": "entregar uma abertura de 15 s em 16:9 e 9:16, com o DESIGN.md, conferida pelo kit nos dois formatos.",
   "competencias": [
     "compor-em-dois-formatos",
@@ -30,7 +30,7 @@
       "t": "O mapa do curso e o seu plano com datas"
     }
   ],
-  "hero_alt": "Dois monitores numa sala de edição escura, um na horizontal e outro na vertical, com o mesmo quadro de abertura.",
+  "hero_alt": "Dois monitores numa sala de ediçêo escura, um na horizontal e outro na vertical, com o mesmo quadro de abertura.",
   "secoes": [
     {
       "tipo": "mapa",
@@ -44,7 +44,7 @@
           "titulo": "Projeto",
           "sub": "init e render",
           "saida": "Projeto HyperFrames que renderiza e passa no conferidor.",
-          "passo": "O projeto da aula 2, com a versão fixa e a telemetria desligada. É a pasta onde a abertura vai morar."
+          "passo": "O projeto da aula 2, com a versêo fixa e a telemetria desligada. É a pasta onde a abertura vai morar."
         },
         {
           "aula": "marca",
@@ -61,7 +61,7 @@
           "quando": "Passo 3",
           "titulo": "Pedido",
           "sub": "RISE e quadros",
-          "saida": "Composição que o agente fez e você conferiu em cinco quadros.",
+          "saida": "Composiçêo que o agente fez e você conferiu em cinco quadros.",
           "passo": "O pedido RISE da aula 3, agora para 15 s e dois formatos. O E inclui o check e os quadros dos dois."
         },
         {
@@ -70,8 +70,8 @@
           "quando": "Passo 4",
           "titulo": "Som",
           "sub": "opcional",
-          "saida": "Narração ou trilha no código, conferida com --audio.",
-          "passo": "Se a sua abertura tem voz ou trilha, a aula 7 põe o som. Se não tem, pule: o conferidor diz \"sem áudio\" e está certo."
+          "saida": "Narraçêo ou trilha no código, conferida com --audio.",
+          "passo": "Se a sua abertura tem voz ou trilha, a aula 7 põe o som. Se nêo tem, pule: o conferidor diz \"sem áudio\" e está certo."
         }
       ],
       "resultado": {
@@ -79,17 +79,17 @@
         "texto": "Uma abertura sua em 16:9 e 9:16, com DESIGN.md, render local e conferida.",
         "total": "24 exercícios"
       },
-      "legenda": "Aulas 1, 5 e 6 são base: determinismo, Remotion e bibliotecas entram quando a sua peça pedir."
+      "legenda": "Aulas 1, 5 e 6 sêo base: determinismo, Remotion e bibliotecas entram quando a sua peça pedir."
     },
     {
       "tipo": "codigo",
       "titulo": "A abertura nos dois formatos",
-      "sub": "abertura.css e abertura.js são compartilhados; index.html (1920×1080) e formatos/vertical.html (1080×1920) só mudam a raiz e uma classe.",
+      "sub": "abertura.css e abertura.js sêo compartilhados; index.html (1920×1080) e formatos/vertical.html (1080×1920) só mudam a raiz e uma classe.",
       "blocos": [
         {
           "rot": "Arquivo · kit/exemplos/a8-abertura/abertura.css",
           "icone": "arquivo",
-          "conteudo": "/* tokens do DESIGN.md + layout que serve aos dois formatos (16:9 e 9:16) */\n:root { --fundo: #0c0c10; --superficie: #1c1c22; --linha: #3f3f47; --texto: #f4f4f5; --texto2: #a1a1aa; --destaque: #e9b949; }\n* { margin: 0; padding: 0; box-sizing: border-box; }\nhtml, body { overflow: hidden; background: var(--fundo); }\n#root { width: 100%; height: 100%; position: relative; font-family: ui-sans-serif, system-ui, sans-serif; }\n#luz { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, var(--superficie) 0%, var(--fundo) 70%); }\n#bloco { position: absolute; left: 10%; right: 10%; top: 50%; transform: translateY(-50%); }\n#rotulo { color: var(--texto2); font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase; line-height: 1.3; }\n#titulo { color: var(--texto); font-size: 150px; font-weight: 700; line-height: 1.1; margin-top: 36px; }\n#apoio { color: var(--texto2); font-size: 54px; line-height: 1.2; margin-top: 40px; }\n#trilho { position: absolute; left: 10%; right: 10%; bottom: 14%; height: 4px; background: var(--linha); transform-origin: left center; }\n#cabeca { position: absolute; left: 10%; bottom: calc(14% - 38px); width: 18px; height: 80px; background: var(--destaque); border-radius: 4px; }\n/* 9:16: mesma peça, letra maior em relação à largura, tudo empilhado */\n.vertical #titulo { font-size: 132px; }\n.vertical #apoio { font-size: 56px; }\n.vertical #rotulo { font-size: 36px; }"
+          "conteudo": "/* tokens do DESIGN.md + layout que serve aos dois formatos (16:9 e 9:16) */\n:root { --fundo: #0c0c10; --superficie: #1c1c22; --linha: #3f3f47; --texto: #f4f4f5; --texto2: #a1a1aa; --destaque: #e9b949; }\n* { margin: 0; padding: 0; box-sizing: border-box; }\nhtml, body { overflow: hidden; background: var(--fundo); }\n#root { width: 100%; height: 100%; position: relative; font-family: ui-sans-serif, system-ui, sans-serif; }\n#luz { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, var(--superficie) 0%, var(--fundo) 70%); }\n#bloco { position: absolute; left: 10%; right: 10%; top: 50%; transform: translateY(-50%); }\n#rotulo { color: var(--texto2); font-size: 40px; letter-spacing: 0.2em; text-transform: uppercase; line-height: 1.3; }\n#titulo { color: var(--texto); font-size: 150px; font-weight: 700; line-height: 1.1; margin-top: 36px; }\n#apoio { color: var(--texto2); font-size: 54px; line-height: 1.2; margin-top: 40px; }\n#trilho { position: absolute; left: 10%; right: 10%; bottom: 14%; height: 4px; background: var(--linha); transform-origin: left center; }\n#cabeca { position: absolute; left: 10%; bottom: calc(14% - 38px); width: 18px; height: 80px; background: var(--destaque); border-radius: 4px; }\n/* 9:16: mesma peça, letra maior em relaçêo à largura, tudo empilhado */\n.vertical #titulo { font-size: 132px; }\n.vertical #apoio { font-size: 56px; }\n.vertical #rotulo { font-size: 36px; }"
         },
         {
           "rot": "Arquivo · kit/exemplos/a8-abertura/abertura.js",
@@ -99,7 +99,7 @@
         {
           "rot": "Arquivo · kit/exemplos/a8-abertura/index.html",
           "icone": "arquivo",
-          "conteudo": "<!doctype html>\n<html lang=\"pt-BR\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=1920, height=1080\" />\n    <script src=\"https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js\"></script>\n    <link rel=\"stylesheet\" href=\"abertura.css\" />\n    <style>html, body { width: 1920px; height: 1080px; }</style>\n  </head>\n  <body>\n    <div id=\"root\" data-composition-id=\"main\" data-start=\"0\" data-duration=\"15\" data-width=\"1920\" data-height=\"1080\">\n      <div id=\"luz\"></div>\n      <div id=\"bloco\">\n        <p id=\"rotulo\">Formação CARCKHÉ com IA</p>\n        <h1 id=\"titulo\">Motion por&nbsp;código</h1>\n        <p id=\"apoio\">HyperFrames e Remotion, do terminal ao&nbsp;MP4</p>\n      </div>\n      <div id=\"trilho\"></div>\n      <div id=\"cabeca\"></div>\n    </div>\n    <script src=\"abertura.js\"></script>\n    <script>window.__timelines[\"main\"] = window.criaAbertura();</script>\n  </body>\n</html>"
+          "conteudo": "<!doctype html>\n<html lang=\"pt-BR\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=1920, height=1080\" />\n    <script src=\"https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js\"></script>\n    <link rel=\"stylesheet\" href=\"abertura.css\" />\n    <style>html, body { width: 1920px; height: 1080px; }</style>\n  </head>\n  <body>\n    <div id=\"root\" data-composition-id=\"main\" data-start=\"0\" data-duration=\"15\" data-width=\"1920\" data-height=\"1080\">\n      <div id=\"luz\"></div>\n      <div id=\"bloco\">\n        <p id=\"rotulo\">Formaçêo CARCKHÉ com IA</p>\n        <h1 id=\"titulo\">Motion por&nbsp;código</h1>\n        <p id=\"apoio\">HyperFrames e Remotion, do terminal ao&nbsp;MP4</p>\n      </div>\n      <div id=\"trilho\"></div>\n      <div id=\"cabeca\"></div>\n    </div>\n    <script src=\"abertura.js\"></script>\n    <script>window.__timelines[\"main\"] = window.criaAbertura();</script>\n  </body>\n</html>"
         },
         {
           "rot": "Terminal · marca, check, dois renders e conferir",
@@ -112,15 +112,15 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>OK: 4 seções · 6 cores · 5 regras de movimento · a composição usa só cores do DESIGN.md\nsaída: 0\n◇  Check passed\nOK: 15,0 s · 1920×1080 · 30 fps · sem áudio\nsaída: 0\nOK: 15,0 s · 1080×1920 · 30 fps · sem áudio\nsaída: 0</pre><p>O render do 9:16 usa -c formatos/vertical.html. O vertical.html é o index.html com a raiz em 1080×1920, a classe vertical e os caminhos ../abertura.css e ../abertura.js.</p>"
+            "html": "<pre>OK: 4 seções · 6 cores · 5 regras de movimento · a composiçêo usa só cores do DESIGN.md\nsaída: 0\n◇  Check passed\nOK: 15,0 s · 1920×1080 · 30 fps · sem áudio\nsaída: 0\nOK: 15,0 s · 1080×1920 · 30 fps · sem áudio\nsaída: 0</pre><p>O render do 9:16 usa -c formatos/vertical.html. O vertical.html é o index.html com a raiz em 1080×1920, a classe vertical e os caminhos ../abertura.css e ../abertura.js.</p>"
           },
           {
             "rot": "Erro capturado: --resolution portrait",
-            "html": "<pre>✗  Output resolution incompatible\n\n   outputResolution portrait (1080×1920) does not match the aspect ratio of the composition (1920×1080). The composition is landscape, so use --resolution landscape instead.</pre><p>A opção --resolution troca a resolução dentro da mesma proporção (por exemplo, 4K). Mudar de 16:9 para 9:16 é mudar o enquadramento: outra composição.</p>"
+            "html": "<pre>✗  Output resolution incompatible\n\n   outputResolution portrait (1080×1920) does not match the aspect ratio of the composition (1920×1080). The composition is landscape, so use --resolution landscape instead.</pre><p>A opçêo --resolution troca a resoluçêo dentro da mesma proporçêo (por exemplo, 4K). Mudar de 16:9 para 9:16 é mudar o enquadramento: outra composiçêo.</p>"
           },
           {
             "rot": "Uma palavra sozinha",
-            "html": "<p>No primeiro render, o 9:16 quebrou o título em \"Motion por\" / \"código\": falha 2 da aula 3. A correção foi amarrar as duas últimas palavras com &amp;nbsp; no HTML (\"por&amp;nbsp;código\"). Só apareceu olhando os quadros.</p>"
+            "html": "<p>No primeiro render, o 9:16 quebrou o título em \"Motion por\" / \"código\": falha 2 da aula 3. A correçêo foi amarrar as duas últimas palavras com &amp;nbsp; no HTML (\"por&amp;nbsp;código\"). Só apareceu olhando os quadros.</p>"
           }
         ]
       }
@@ -128,7 +128,7 @@
     {
       "tipo": "codigo",
       "titulo": "O erro, isolado",
-      "sub": "Tentar tirar o 9:16 da composição 16:9 por opção de render.",
+      "sub": "Tentar tirar o 9:16 da composiçêo 16:9 por opçêo de render.",
       "blocos": [
         {
           "rot": "Terminal · render com --resolution portrait",
@@ -162,11 +162,11 @@
         "inicio": "5 etapas em fila/. Clique em \"Rodar a fila\".",
         "rodando": "Uma etapa por vez: render pesa, e dois Chrome juntos disputam a memória.",
         "parou": "Interrompido. A etapa do meio ficou em rodando/. Rode de novo para ver a retomada.",
-        "retoma": "Retomada: o que estava em rodando/ voltou para a fila. O que já está em pronto/ não é refeito.",
+        "retoma": "Retomada: o que estava em rodando/ voltou para a fila. O que já está em pronto/ nêo é refeito.",
         "fim": "Fila vazia: os dois formatos renderizados e conferidos.",
-        "fimfalha": "Fila vazia. O render do 9:16 foi para falhou/: é só ele que você refaz, não o 16:9."
+        "fimfalha": "Fila vazia. O render do 9:16 foi para falhou/: é só ele que você refaz, nêo o 16:9."
       },
-      "legenda": "Simulação no navegador: nada renderiza de verdade. A falha é proposital, para mostrar que só a etapa que falhou volta."
+      "legenda": "Simulaçêo no navegador: nada renderiza de verdade. A falha é proposital, para mostrar que só a etapa que falhou volta."
     },
     {
       "tipo": "pratica",
@@ -182,7 +182,7 @@
         },
         {
           "id": "e2",
-          "titulo": "E2 · O atalho que não existe",
+          "titulo": "E2 · O atalho que nêo existe",
           "min": "5 min",
           "texto": "Rode o bloco do --resolution portrait.",
           "pronto": "<code>✗  Output resolution incompatible</code> e a linha que termina em <code>use --resolution landscape instead.</code>"
@@ -252,18 +252,18 @@
     {
       "tipo": "quiz",
       "titulo": "Teste da aula",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
           "p": "Como sair o 9:16 da mesma abertura?",
           "opcoes": [
-            "render --resolution portrait na composição 16:9.",
+            "render --resolution portrait na composiçêo 16:9.",
             "Girar o MP4 16:9 no FFmpeg e ajustar a escala.",
-            "Outra composição 1080×1920 com o mesmo CSS.",
+            "Outra composiçêo 1080×1920 com o mesmo CSS.",
             "Cortar as laterais do 16:9 num editor de vídeo."
           ],
           "certa": 2,
-          "explica": "O 0.8.176 recusa --resolution portrait em composição paisagem. Girar ou cortar perde texto e enquadramento. Outra composição com o mesmo estilo é o caminho que o render aceita.",
+          "explica": "O 0.8.176 recusa --resolution portrait em composiçêo paisagem. Girar ou cortar perde texto e enquadramento. Outra composiçêo com o mesmo estilo é o caminho que o render aceita.",
           "ref": "codigo"
         },
         {
@@ -271,7 +271,7 @@
           "opcoes": [
             "Porque o GSAP só aceita distâncias em pixels absolutos.",
             "Para a cabeça correr o trilho todo nos dois formatos.",
-            "Porque o lint exige ler data-width em toda composição.",
+            "Porque o lint exige ler data-width em toda composiçêo.",
             "Para o vídeo vertical ficar mais curto que o horizontal."
           ],
           "certa": 1,
@@ -287,7 +287,7 @@
             "Nada: entregue só o 16:9."
           ],
           "certa": 0,
-          "explica": "O que está pronto e conferido não se refaz. E renderizar os dois juntos numa máquina carregada é como o segundo falha por memória.",
+          "explica": "O que está pronto e conferido nêo se refaz. E renderizar os dois juntos numa máquina carregada é como o segundo falha por memória.",
           "ref": "simfila"
         }
       ]
@@ -315,7 +315,7 @@
       "titulo": "Próximo passo",
       "links": [
         {
-          "t": "Curso 4 da formação: a fábrica de vídeo com agentes",
+          "t": "Curso 4 da formaçêo: a fábrica de vídeo com agentes",
           "href": "https://linnoff88-dev.github.io/
           "icone": "seta"
         },

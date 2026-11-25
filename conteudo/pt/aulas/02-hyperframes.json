@@ -5,8 +5,8 @@
   "titulo": "HyperFrames do zero: HTML com data-* vira MP4",
   "titulo_curto": "HyperFrames do zero",
   "minutos": 15,
-  "lead": "HyperFrames é um motor aberto do HeyGen que renderiza HTML em vídeo. Três atributos dizem o tamanho e a duração, uma timeline GSAP pausada diz o movimento, e o check confere tudo antes do render. Nesta aula você cria o projeto, escreve a primeira composição e sai com um MP4 conferido.",
-  "objetivo": "criar um projeto HyperFrames, escrever a composição com data-* e renderizar um MP4 que passa no conferidor.",
+  "lead": "HyperFrames é um motor aberto do HeyGen que renderiza HTML em vídeo. Três atributos dizem o tamanho e a duraçêo, uma timeline GSAP pausada diz o movimento, e o check confere tudo antes do render. Nesta aula você cria o projeto, escreve a primeira composiçêo e sai com um MP4 conferido.",
+  "objetivo": "criar um projeto HyperFrames, escrever a composiçêo com data-* e renderizar um MP4 que passa no conferidor.",
   "competencias": [
     "criar-projeto-hyperframes",
     "escrever-composicao-data",
@@ -15,7 +15,7 @@
   "aprende": [
     {
       "icone": "pasta",
-      "t": "O que o init cria e por que a versão fica fixa no package.json"
+      "t": "O que o init cria e por que a versêo fica fixa no package.json"
     },
     {
       "icone": "arquivo",
@@ -41,7 +41,7 @@
           "icone": "terminal",
           "titulo": "init",
           "sub": "cria a pasta",
-          "detalhe": "npx hyperframes@0.8.176 init cria index.html, package.json (com a versão fixa nos scripts), hyperframes.json e um AGENTS.md/CLAUDE.md com as regras para o agente."
+          "detalhe": "npx hyperframes@0.8.176 init cria index.html, package.json (com a versêo fixa nos scripts), hyperframes.json e um AGENTS.md/CLAUDE.md com as regras para o agente."
         },
         {
           "icone": "arquivo",
@@ -58,15 +58,15 @@
         {
           "icone": "portao",
           "titulo": "check",
-          "sub": "portão",
-          "detalhe": "Roda o lint e abre a composição num navegador: erros de execução, texto fora do quadro, movimento e contraste. Só renderize com Check passed."
+          "sub": "portêo",
+          "detalhe": "Roda o lint e abre a composiçêo num navegador: erros de execuçêo, texto fora do quadro, movimento e contraste. Só renderize com Check passed."
         },
         {
           "icone": "video",
           "titulo": "render",
           "sub": "MP4",
           "forte": true,
-          "detalhe": "--quality draft para testar, looks (padrão) e delivery para entregar. --workers limita quantos Chrome rodam juntos."
+          "detalhe": "--quality draft para testar, looks (padrêo) e delivery para entregar. --workers limita quantos Chrome rodam juntos."
         }
       ],
       "legenda": "Quando a raiz tem data-duration, é ela que manda: uma timeline mais curta segura o último quadro."
@@ -87,18 +87,18 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>saída: 0\nAGENTS.md\nCLAUDE.md\nhyperframes.json\nindex.html\nmeta.json\npackage.json\n    \"render\": \"npx --yes hyperframes@0.8.176 render\",\n\n  Status:     disabled</pre><p>O script render do package.json já chama a versão exata. A telemetria aparece desligada porque o bloco exportou HYPERFRAMES_NO_TELEMETRY=1.</p>"
+            "html": "<pre>saída: 0\nAGENTS.md\nCLAUDE.md\nhyperframes.json\nindex.html\nmeta.json\npackage.json\n    \"render\": \"npx --yes hyperframes@0.8.176 render\",\n\n  Status:     disabled</pre><p>O script render do package.json já chama a versêo exata. A telemetria aparece desligada porque o bloco exportou HYPERFRAMES_NO_TELEMETRY=1.</p>"
           },
           {
             "rot": "Por que desligar a telemetria",
-            "html": "<p>Por padrão o CLI envia dados anônimos de uso. O <code>telemetry status</code> do 0.8.176 mostra como desligar: <code>hyperframes telemetry disable</code> (fica gravado) ou as variáveis <code>HYPERFRAMES_NO_TELEMETRY=1</code> ou <code>DO_NOT_TRACK=1</code> (só na sessão). Os blocos do curso usam a variável.</p>"
+            "html": "<p>Por padrêo o CLI envia dados anônimos de uso. O <code>telemetry status</code> do 0.8.176 mostra como desligar: <code>hyperframes telemetry disable</code> (fica gravado) ou as variáveis <code>HYPERFRAMES_NO_TELEMETRY=1</code> ou <code>DO_NOT_TRACK=1</code> (só na sessêo). Os blocos do curso usam a variável.</p>"
           }
         ]
       }
     },
     {
       "tipo": "codigo",
-      "titulo": "A primeira composição",
+      "titulo": "A primeira composiçêo",
       "sub": "Título, filete e subtítulo entrando em ordem. Copie por cima do index.html do init.",
       "blocos": [
         {
@@ -117,11 +117,11 @@
         "abas": [
           {
             "rot": "Saída capturada (19/10/2026)",
-            "html": "<pre>  ◇ 0 errors, 0 warnings\n  ◇ 0 errors, 0 warnings\n  ◇ 0 issues across 9 sample(s)\n  ◇ 0 errors, 0 warnings\n  ◇ 7/7 text checks pass WCAG AA\n  ◇ disabled\n◇  Check passed\nrender: 0\nOK: 5,0 s · 1920×1080 · 30 fps · sem áudio\nsaída: 0</pre><p>As cinco primeiras linhas ◇ são as partes do check (lint, execução, layout, movimento, contraste); a sexta, disabled, é a captura de quadros, que vem desligada (--snapshots liga). O conferidor lê o MP4 com ffprobe e compara com o que você pediu: 5 s, 1920×1080.</p>"
+            "html": "<pre>  ◇ 0 errors, 0 warnings\n  ◇ 0 errors, 0 warnings\n  ◇ 0 issues across 9 sample(s)\n  ◇ 0 errors, 0 warnings\n  ◇ 7/7 text checks pass WCAG AA\n  ◇ disabled\n◇  Check passed\nrender: 0\nOK: 5,0 s · 1920×1080 · 30 fps · sem áudio\nsaída: 0</pre><p>As cinco primeiras linhas ◇ sêo as partes do check (lint, execuçêo, layout, movimento, contraste); a sexta, disabled, é a captura de quadros, que vem desligada (--snapshots liga). O conferidor lê o MP4 com ffprobe e compara com o que você pediu: 5 s, 1920×1080.</p>"
           },
           {
             "rot": "Erro comum: clipe com filhos",
-            "html": "<p>Pôr data-start numa seção que tem título e texto dentro fez o lint do 0.8.176 avisar <code>nested_structure_needs_subcomposition</code>. No exemplo, a seção é só um contêiner (sem data-start) e a timeline anima os filhos; cena com vários elementos próprios vira subcomposição.</p>"
+            "html": "<p>Pôr data-start numa seçêo que tem título e texto dentro fez o lint do 0.8.176 avisar <code>nested_structure_needs_subcomposition</code>. No exemplo, a seçêo é só um contêiner (sem data-start) e a timeline anima os filhos; cena com vários elementos próprios vira subcomposiçêo.</p>"
           }
         ]
       }
@@ -169,30 +169,30 @@
     {
       "tipo": "quiz",
       "titulo": "Teste da aula",
-      "sub": "A explicação aparece depois da sua resposta.",
+      "sub": "A explicaçêo aparece depois da sua resposta.",
       "perguntas": [
         {
-          "p": "O que define a duração do MP4 no HyperFrames?",
+          "p": "O que define a duraçêo do MP4 no HyperFrames?",
           "opcoes": [
             "O tamanho da timeline GSAP.",
-            "O data-duration da raiz da composição.",
+            "O data-duration da raiz da composiçêo.",
             "O --fps do render.",
-            "A duração do clipe mais longo."
+            "A duraçêo do clipe mais longo."
           ],
           "certa": 1,
-          "explica": "A raiz manda: uma timeline mais curta segura o último quadro, e clipe com data-start que passa do fim é cortado (o lint avisa com clip_ends_past_root_duration). Sem data-duration, o motor deduz a duração da timeline.",
+          "explica": "A raiz manda: uma timeline mais curta segura o último quadro, e clipe com data-start que passa do fim é cortado (o lint avisa com clip_ends_past_root_duration). Sem data-duration, o motor deduz a duraçêo da timeline.",
           "ref": "diagrama"
         },
         {
-          "p": "O check passou, mas o render saiu errado. Qual destes o check NÃO garante?",
+          "p": "O check passou, mas o render saiu errado. Qual destes o check NêO garante?",
           "opcoes": [
-            "Que não há erro de JavaScript rodando na página.",
+            "Que nêo há erro de JavaScript rodando na página.",
             "Que nenhum texto sai para fora do quadro.",
             "Que o vídeo conta a história certa.",
             "Que o contraste do texto passa no WCAG AA."
           ],
           "certa": 2,
-          "explica": "O check confere técnica: execução, layout, movimento, contraste. Se a peça diz a coisa certa é com você, olhando os quadros (aula 3).",
+          "explica": "O check confere técnica: execuçêo, layout, movimento, contraste. Se a peça diz a coisa certa é com você, olhando os quadros (aula 3).",
           "ref": "codigo"
         },
         {
@@ -200,23 +200,23 @@
           "opcoes": [
             "Para o bloco dar a mesma saída daqui a meses.",
             "Porque versões novas deixaram de renderizar MP4.",
-            "Porque o npx não aceita rodar outra versão.",
-            "Para não precisar baixar o navegador de novo."
+            "Porque o npx nêo aceita rodar outra versêo.",
+            "Para nêo precisar baixar o navegador de novo."
           ],
           "certa": 0,
-          "explica": "O pacote muda toda semana (os cursos antigos usavam 0.8.66). Versão fixa no bloco e no package.json do init é o que faz a saída capturada continuar valendo.",
+          "explica": "O pacote muda toda semana (os cursos antigos usavam 0.8.66). Versêo fixa no bloco e no package.json do init é o que faz a saída capturada continuar valendo.",
           "ref": "codigo"
         },
         {
-          "p": "Como desligar a telemetria só na sessão do terminal?",
+          "p": "Como desligar a telemetria só na sessêo do terminal?",
           "opcoes": [
             "Apagando a pasta ~/.hyperframes da sua máquina.",
-            "Rodando todos os comandos com a opção --quiet.",
+            "Rodando todos os comandos com a opçêo --quiet.",
             "Desinstalando o Chrome que o render baixou.",
             "export HYPERFRAMES_NO_TELEMETRY=1."
           ],
           "certa": 3,
-          "explica": "As duas variáveis desligam enquanto a sessão durar; hyperframes telemetry disable grava a escolha. O --quiet só reduz o texto na tela.",
+          "explica": "As duas variáveis desligam enquanto a sessêo durar; hyperframes telemetry disable grava a escolha. O --quiet só reduz o texto na tela.",
           "ref": "codigo"
         }
       ]
@@ -227,15 +227,15 @@
       "itens": [
         {
           "t": "Raiz",
-          "texto": "data-composition-id, tamanho e duração; clipes com data-start."
+          "texto": "data-composition-id, tamanho e duraçêo; clipes com data-start."
         },
         {
           "t": "Uma timeline",
           "texto": "GSAP pausada em window.__timelines com a mesma chave da raiz."
         },
         {
-          "t": "Portão",
-          "texto": "check antes do render, conferidor depois; versão fixa e telemetria desligada."
+          "t": "Portêo",
+          "texto": "check antes do render, conferidor depois; versêo fixa e telemetria desligada."
         }
       ]
     },
@@ -249,7 +249,7 @@
           "icone": "git"
         },
         {
-          "t": "GSAP: documentação da timeline",
+          "t": "GSAP: documentaçêo da timeline",
           "href": "https://gsap.com/docs/v3/GSAP/Timeline/",
           "icone": "relogio"
         },

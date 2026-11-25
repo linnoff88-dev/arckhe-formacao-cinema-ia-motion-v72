@@ -109,7 +109,7 @@
           },
           {
             "rot": "Error capturado: sin la vuelta",
-            "html": "<pre>5 quadros em quadros/\nCOSTURA: diferente — o último quadro não volta ao primeiro\nsaída: 1</pre><p>Sin el último movimiento, el cabezal termina a la derecha y el loop da un salto. El comando detecta la falla antes de cualquier render.</p>"
+            "html": "<pre>5 quadros em quadros/\nCOSTURA: diferente — o último quadro nêo volta ao primeiro\nsaída: 1</pre><p>Sin el último movimiento, el cabezal termina a la derecha y el loop da un salto. El comando detecta la falla antes de cualquier render.</p>"
           },
           {
             "rot": "Cuidado: snapshot y Gemini",
@@ -176,7 +176,7 @@
           "titulo": "E2 · Ver cómo se abre la costura",
           "min": "5 min",
           "texto": "Ejecuta el bloque del error, que borra la vuelta del cabezal de lectura.",
-          "pronto": "<code>COSTURA: diferente — o último quadro não volta ao primeiro</code> y <code>saída: 1</code>."
+          "pronto": "<code>COSTURA: diferente — o último quadro nêo volta ao primeiro</code> y <code>saída: 1</code>."
         },
         {
           "id": "e3",

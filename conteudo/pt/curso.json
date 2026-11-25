@@ -3,7 +3,7 @@
   "lang": "pt-BR",
   "url": "https://linnoff88-dev.github.io/
   "nome": "Motion por código com agente",
-  "sub": "Formação CARCKHÉ com IA · curso 3 de 6",
+  "sub": "Formaçêo CARCKHÉ com IA · curso 3 de 6",
   "volta": {
     "t": "ARCKHÉ AI",
     "href": "https://ARCKHÉ AI/"
@@ -15,10 +15,10 @@
     "link": "Abrir o kit no GitHub",
     "href": "https://github.com/linnoff88-dev/formacao-cARCKHÉ-ia-motion-v72/tree/main/kit"
   },
-  "rodape": "ARCKHÉ AI · conteúdo aberto e gratuito · formato ARCKHÉ Learning v7.2 · Formação CARCKHÉ com IA, curso 3 de 6 · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a>",
+  "rodape": "ARCKHÉ AI · conteúdo aberto e gratuito · formato ARCKHÉ Learning v7.2 · Formaçêo CARCKHÉ com IA, curso 3 de 6 · <a href=\"https://ARCKHÉ AI/\">ARCKHÉ AI</a> · <a href=\"https://www.ARCKHÉ AI/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a>",
   "videos": {},
   "inicio": {
-    "kicker": "Formação CARCKHÉ com IA · curso 3 de 6 · 8 aulas",
+    "kicker": "Formaçêo CARCKHÉ com IA · curso 3 de 6 · 8 aulas",
     "titulo": "Motion por código com agente: o vídeo que sai do terminal, igual toda vez",
     "lead": "HyperFrames e Remotion transformam HTML e React em MP4. Você pede ao agente, confere em cinco quadros, prende a peça a um DESIGN.md, põe voz e legenda locais e entrega uma abertura de 15 s em 16:9 e 9:16. Tudo renderiza na sua máquina, sem crédito.",
     "cta": "Começar pela aula 1",
@@ -26,7 +26,7 @@
       "t": "Abrir o kit no GitHub",
       "href": "https://github.com/linnoff88-dev/formacao-cARCKHÉ-ia-motion-v72/tree/main/kit"
     },
-    "capa_alt": "Mesa de edição escura com um monitor de linha do tempo, um teclado e uma claquete fechada; à esquerda o título do curso.",
+    "capa_alt": "Mesa de ediçêo escura com um monitor de linha do tempo, um teclado e uma claquete fechada; à esquerda o título do curso.",
     "numeros": [
       {
         "v": "8",
@@ -60,17 +60,17 @@
         "t": "O que você sai fazendo",
         "itens": [
           "Provar que o seu render é determinístico e achar o que quebra isso.",
-          "Pedir uma composição ao agente com o método RISE e conferir em cinco quadros antes do MP4.",
+          "Pedir uma composiçêo ao agente com o método RISE e conferir em cinco quadros antes do MP4.",
           "Escrever o DESIGN.md do vídeo e reprovar cor fora da marca com um comando.",
-          "Pôr narração e legenda karaokê feitas na sua máquina e entregar 16:9 e 9:16 conferidos."
+          "Pôr narraçêo e legenda karaokê feitas na sua máquina e entregar 16:9 e 9:16 conferidos."
         ]
       },
       {
         "t": "Antes de começar",
         "itens": [
           "Linux ou macOS com Node 22 ou mais novo, FFmpeg, Python 3 e git. No Windows, use o WSL.",
-          "Uns 2 GB livres: o navegador do render (~240 MB), a voz local (~340 MB) e o modelo de transcrição (~490 MB) baixam no primeiro uso.",
-          "Recomendado: o curso 0 (Direção) para a linguagem de plano e luz. Som, montagem e ética ficam no curso 2."
+          "Uns 2 GB livres: o navegador do render (~240 MB), a voz local (~340 MB) e o modelo de transcriçêo (~490 MB) baixam no primeiro uso.",
+          "Recomendado: o curso 0 (Direçêo) para a linguagem de plano e luz. Som, montagem e ética ficam no curso 2."
         ]
       }
     ]
@@ -89,7 +89,7 @@
     "dg_dica": "Clique em cada bloco do diagrama para ver o que ele faz.",
     "copiar": "Copiar",
     "copiado": "Copiado",
-    "selo_simulacao": "Simulação: exemplo ilustrativo",
+    "selo_simulacao": "Simulaçêo: exemplo ilustrativo",
     "selo_real": "Exemplo do repositório",
     "pronto_quando": "Pronto quando:",
     "fiz": "Fiz este exercício",
@@ -98,8 +98,8 @@
     "de": "de",
     "cert_tag": "competência",
     "correto": "Correto",
-    "errado": "Não é essa",
-    "quiz_aguarda": "Escolha uma alternativa. A explicação aparece depois da sua tentativa.",
+    "errado": "Nêo é essa",
+    "quiz_aguarda": "Escolha uma alternativa. A explicaçêo aparece depois da sua tentativa.",
     "proxima_pergunta": "Próxima pergunta",
     "quiz_ver": "Ver resultado",
     "quiz_fim": "Teste concluído",
@@ -126,7 +126,7 @@
     "baixar_ics": "Baixar para o calendário (.ics)",
     "ind_estudo": "Estudo (aulas)",
     "ind_pratica": "Prática declarada",
-    "ind_nota": "Prática = exercícios que você marcou como feitos. A comprovação vem na prova da certificação.",
+    "ind_nota": "Prática = exercícios que você marcou como feitos. A comprovaçêo vem na prova da certificaçêo.",
     "estudo": {
       "titulo": "Seu estudo",
       "continuar": "Continuar de onde parei",
@@ -139,7 +139,7 @@
       "notas": "Minhas anotações",
       "dados": "Copiar meus dados",
       "sem_testes": "Nenhum teste feito ainda. O teste fica no fim de cada aula.",
-      "nao_fez": "teste ainda não feito",
+      "nao_fez": "teste ainda nêo feito",
       "ultimo": "Último",
       "melhor": "Melhor",
       "tentativas": "tentativas",
@@ -148,21 +148,21 @@
       "rever": "Para rever",
       "resposta": "Resposta certa:",
       "ir_teste": "Refazer o teste",
-      "sem_notas": "Nenhuma anotação ainda. Na aula, selecione um trecho do texto e toque em Marcar ou Anotar.",
+      "sem_notas": "Nenhuma anotaçêo ainda. Na aula, selecione um trecho do texto e toque em Marcar ou Anotar.",
       "so_marcado": "(só marcado)",
       "marcar": "Marcar",
       "anotar": "Anotar",
       "salvar": "Salvar",
       "apagar": "Apagar marca",
       "fechar": "Fechar",
-      "nota_ph": "Escreva sua anotação sobre este trecho…",
+      "nota_ph": "Escreva sua anotaçêo sobre este trecho…",
       "um_bloco": "Marque dentro de um parágrafo só.",
-      "nao_marca": "Este trecho não pode ser marcado.",
-      "dados_exp": "Seu progresso, suas anotações e as notas dos testes ficam só neste navegador. Baixe uma cópia (.json) para guardar ou para continuar em outro computador ou navegador; lá, carregue a cópia. Carregar soma com o que já existe e não apaga nada.",
+      "nao_marca": "Este trecho nêo pode ser marcado.",
+      "dados_exp": "Seu progresso, suas anotações e as notas dos testes ficam só neste navegador. Baixe uma cópia (.json) para guardar ou para continuar em outro computador ou navegador; lá, carregue a cópia. Carregar soma com o que já existe e nêo apaga nada.",
       "exportar": "Baixar cópia",
       "importar": "Carregar cópia",
       "import_ok": "Cópia carregada ({n} itens). Atualizando a página…",
-      "import_erro": "Arquivo não reconhecido. Nada foi alterado.",
+      "import_erro": "Arquivo nêo reconhecido. Nada foi alterado.",
       "import_outro": "Esta cópia é de outro curso. Nada foi alterado.",
       "export_ok": "Cópia baixada."
     },
@@ -174,7 +174,7 @@
     "conv_ruim": "Escolha fraca",
     "conv_fim": "Fim da conversa",
     "conv_placar": "Você fez {p} de {m} pontos possíveis.",
-    "conv_licao": "Lição:",
+    "conv_licao": "Liçêo:",
     "conv_recomecar": "Recomeçar a conversa",
     "conv_feita": "Seu melhor placar: {p} de {m} pontos."
   },

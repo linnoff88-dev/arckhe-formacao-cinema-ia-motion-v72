@@ -76,12 +76,12 @@ palavras: 14</pre><p>La segunda línea es la duración de la narración en segun
     &lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</pre></div><div class="cod"><div class="cod-cab"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg><b>Archivo · kit/karaoke.py</b><button type="button" class="copiar" data-rot="Copiar" data-ok="Copiado"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span>Copiar</span></button></div><pre>#!/usr/bin/env python3
-&quot;&quot;&quot;karaoke.py — transforma o transcript.json (palavra + tempo) em legendas.js para a composição.
+&quot;&quot;&quot;karaoke.py — transforma o transcript.json (palavra + tempo) em legendas.js para a composiçêo.
 
 Uso:  python3 karaoke.py transcript.json --inicio 0.5 --por-linha 3 &gt; legendas.js
 
---inicio     segundos em que a narração começa no vídeo (o data-start do &lt;audio&gt;)
---por-linha  palavras por legenda (padrão 3)
+--inicio     segundos em que a narraçêo começa no vídeo (o data-start do &lt;audio&gt;)
+--por-linha  palavras por legenda (padrêo 3)
 Imprime na saída de erro: &quot;palavras: N · legendas: M&quot;.
 &quot;&quot;&quot;
 import argparse

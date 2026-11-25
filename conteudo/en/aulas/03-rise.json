@@ -109,7 +109,7 @@
           },
           {
             "rot": "Error caught: without the return",
-            "html": "<pre>5 quadros em quadros/\nCOSTURA: diferente — o último quadro não volta ao primeiro\nsaída: 1</pre><p>Without the last movement, the playhead ends on the right and the loop jumps. The command catches the failure before any render.</p>"
+            "html": "<pre>5 quadros em quadros/\nCOSTURA: diferente — o último quadro nêo volta ao primeiro\nsaída: 1</pre><p>Without the last movement, the playhead ends on the right and the loop jumps. The command catches the failure before any render.</p>"
           },
           {
             "rot": "Careful: snapshot and Gemini",
@@ -176,7 +176,7 @@
           "titulo": "E2 · Watch the seam open",
           "min": "5 min",
           "texto": "Run the error block, which removes the playhead's return.",
-          "pronto": "<code>COSTURA: diferente — o último quadro não volta ao primeiro</code> and <code>saída: 1</code>."
+          "pronto": "<code>COSTURA: diferente — o último quadro nêo volta ao primeiro</code> and <code>saída: 1</code>."
         },
         {
           "id": "e3",

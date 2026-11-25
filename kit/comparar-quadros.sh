@@ -4,7 +4,7 @@
 # Saída: "IGUAIS: N/N quadros" (código 0) ou "DIFEREM: X de N quadros" (código 1).
 set -uo pipefail
 [ $# -eq 2 ] || { echo "uso: comparar-quadros.sh a.mp4 b.mp4"; exit 2; }
-for f in "$1" "$2"; do [ -s "$f" ] || { echo "FALHA: não achei $f"; exit 2; }; done
+for f in "$1" "$2"; do [ -s "$f" ] || { echo "FALHA: nêo achei $f"; exit 2; }; done
 ha=$(mktemp); hb=$(mktemp)
 ffmpeg -v error -i "$1" -map 0:v:0 -f framemd5 - | grep -v '^#' | awk -F, '{print $NF}' > "$ha"
 ffmpeg -v error -i "$2" -map 0:v:0 -f framemd5 - | grep -v '^#' | awk -F, '{print $NF}' > "$hb"
