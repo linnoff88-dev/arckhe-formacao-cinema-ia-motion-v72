@@ -1,4 +1,4 @@
-K=~/projetos/formacao-cinema-ia-motion-v72/kit
+K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit
 export HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1
 cd ${TMPDIR:-/tmp}/ensaio-motion/a2/minha-abertura
 cp "$K/exemplos/a2-ola/index.html" index.html

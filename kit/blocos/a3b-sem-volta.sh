@@ -1,4 +1,4 @@
-K=~/projetos/formacao-cinema-ia-motion-v72/kit
+K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit
 export HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1
 unset GEMINI_API_KEY
 cd ${TMPDIR:-/tmp}/ensaio-motion/a3/loop

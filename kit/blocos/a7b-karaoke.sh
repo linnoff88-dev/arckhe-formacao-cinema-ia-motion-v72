@@ -1,4 +1,4 @@
-K=~/projetos/formacao-cinema-ia-motion-v72/kit
+K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit
 export HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1
 cd ${TMPDIR:-/tmp}/ensaio-motion/a7/karaoke
 # trilha de ensaio: um acorde suave de 8 s gerado no ffmpeg (a sua trilha de verdade entra no lugar)

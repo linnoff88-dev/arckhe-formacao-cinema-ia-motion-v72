@@ -1,4 +1,4 @@
-K=~/projetos/formacao-cinema-ia-motion-v72/kit
+K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit
 export HYPERFRAMES_NO_TELEMETRY=1 NO_COLOR=1
 E=${TMPDIR:-/tmp}/ensaio-motion/a8; rm -rf "$E"; mkdir -p "$E"
 cp -r "$K/exemplos/a8-abertura" "$E/abertura"; cd "$E/abertura"

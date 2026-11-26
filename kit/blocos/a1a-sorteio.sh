@@ -1,4 +1,4 @@
-K=~/projetos/formacao-cinema-ia-motion-v72/kit
+K=~/projetos/formacao-cARCKHÉ-ia-motion-v72/kit
 export HYPERFRAMES_NO_TELEMETRY=1
 E=${TMPDIR:-/tmp}/ensaio-motion/a1; rm -rf "$E"; mkdir -p "$E"
 for ex in a1-sorteio a1-semente; do
